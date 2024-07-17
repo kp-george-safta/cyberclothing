@@ -6,7 +6,7 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Login() {
-  // Task 1: Create Login Screen Victor
+  // Task 1: Create Login Screen
   //  https://pro.chakra-ui.com/components/application/authentication
   //  Use MUI Input elemnts https://mui.com/material-ui/react-table/
 
