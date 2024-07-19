@@ -1,0 +1,26 @@
+.emailtextboxStyle {
+  text-align: center;
+  padding:10px ;
+}
+
+.passwordtextboxStyle {
+  text-align: center;
+  padding: 10px;
+  color: red;
+  
+}
+
+.textLogin {
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom:60px ;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+.email-input {
+  border: 1px solid black ;
+  
+}
