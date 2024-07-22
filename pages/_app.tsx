@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import '@/styles/dashboard.css'
 import type { AppProps } from 'next/app'
 import '@/styles/Login.css'
 export default function App({ Component, pageProps }: AppProps) {

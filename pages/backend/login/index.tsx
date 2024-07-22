@@ -1,13 +1,57 @@
+import { Input } from "@mui/material";
+import { Inter } from "next/font/google";
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import { Input } from "@mui/material";
+import { useState, } from "react";
+import { useRouter } from "next/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  age: string;
+  password: string;
+}
+
+
+
 export default function Login() {
+
+
   // Task 1: Create Login Screen
   //  https://pro.chakra-ui.com/components/application/authentication
   //  Use MUI Input elemnts https://mui.com/material-ui/react-table/
+
+  // Task 2: Verify login information
+  //  1. Get data from users json
+  //  2. Verify if the current exists in users
+  //  3. Console log if the log in is succesfull or throw an error if it s not
+  //  cum sa ti iei valorile dintr un obiect 
+  //  parsare de valori
+  //  verificare daca email ul exista si parola exista 
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const sample = require('../../../users.json');
+  const values = sample.users;
+  const router = useRouter();
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
+    event.preventDefault();
+    const userFound = values.find((user: User) => user.email === email)
+    if (userFound) {
+      if (userFound.password === password) {
+        return router.push("/dashboard")
+      } else {
+        return alert("parola gresita")
+      }
+    } else {
+      return alert("email gresit")
+    }
+  }
+
+
 
   return (
     <>
@@ -18,26 +62,83 @@ export default function Login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="textLogin">
-          <h2>Log in to your account</h2>
-        </div>
-        <div className="emailtextboxStyle">
-          <Input
-            className="email-input"
-            color="primary"
-            disabled={false}
-            placeholder="Enter your Email Address "
-            disableUnderline={true}
-            style={{
-              padding: " 8px 24px",
-              border: "1px solid black",
-              borderRadius: "10px",
-            }}
-          />
+
+        <div className="paginaLogIn">
+
+          <div className="imagineStart">
+            <Image alt="aaa" src={`http://localhost:3000/rzylUjaf_400x400.jpg`} width={50} height={50} />
+          </div>
+
+          <div className="textLogin">
+            <h2>Log in to your account</h2>
+          </div>
+
+
+          <p className="textDhac">
+            Don't have an account ? <a href="#">Sign up!</a>
+          </p>
+
+
+          <form onSubmit={handleSubmit}>
+            <div className="emailtextboxStyle">
+              <Input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="email-input"
+                color="primary"
+                disabled={false}
+                placeholder="Enter your Email Address "
+                disableUnderline={true}
+                style={{
+                  padding: " 4px 60px",
+                  border: "1px solid black",
+                  borderRadius: "20px",
+                }}
+              />
+            </div>
+
+            <div className="passwordtextboxStyle">
+              <Input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="email-input"
+                color="primary"
+                disabled={false}
+                placeholder="Enter your Password "
+                disableUnderline={true}
+                style={{
+                  padding: " 4px 60px",
+                  border: "1px solid black",
+                  borderRadius: "20px",
+                }}
+              />
+
+
+            </div>
+            <p className="rmCheck">
+              <input type="checkbox" id="agree" name="Agree" />
+              <label className="agree">Remember me</label>
+              <span id="agree-error" className="error-message"></span>
+
+
+
+            </p>
+
+            <div className="alignCenter">
+              <button type="submit" className="submitBtn">
+                Sign in
+              </button>
+            </div>
+
+          </form>
+
         </div>
 
-        <div class></div>
       </main>
     </>
+
   );
+
 }
