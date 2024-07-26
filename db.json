@@ -1,0 +1,69 @@
+{
+   "users": [
+      {
+         "id": "1",
+         "name": "miki",
+         "email": "miki@gmail.com",
+         "password": "parola",
+         "age": "20"
+      },
+      {
+         "id": "2",
+         "name": "george",
+         "email": "george@gmail.com",
+         "password": "parola",
+         "age": "20"
+      }
+   ], 
+   "products": [
+      {
+         "id": 1,
+         "pret": "500$",
+         "productName": "Calculator",
+         "status": "In Stock",
+         "categorie": "Electronic"
+       },
+   
+       {
+         "id": 2,
+         "pret": "200$",
+         "productName": "Monitor",
+         "status": " Out of Stock",
+         "categorie": "Electronic"
+       },
+   
+       {
+         "id": 3,
+         "pret": "50$",
+         "productName": "Mouse",
+         "status": "In Stock",
+         "categorie": "Electronic"
+       },
+   
+       {
+         "id": 4,
+         "pret": "100$",
+         "productName": "KeyBoard",
+         "status": "Low on Stock",
+         "categorie": "Electronic"
+       },
+   
+       {
+         "id": 5,
+         "pret": "1000$",
+         "productName": "Laptop",
+         "status": "In Stock",
+         "categorie": "Electronic"
+       },
+   
+       {
+         "id": 6,
+         "pret": "1200$",
+         "productName": "iPhone",
+         "status": "Out of Stock",
+         "categorie": "Electronic"
+       }
+   ]
+
+}
+
