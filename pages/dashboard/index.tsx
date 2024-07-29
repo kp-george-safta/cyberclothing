@@ -158,19 +158,21 @@ export default function MiniDrawer() {
       field: "id",
       headerName: "Nr. Produs",
       width: 90,
+      headerClassName: "header-name",
+      headerAlign: "center"
     },
-    { field: "productName", headerName: "Product name", width: 120 },
-    { field: "pret", headerName: "Pret", type: "number", width: 120 },
+    { field: "productName", headerName: "Product name", width: 120 , headerAlign: "center", align: "center",},
+    { field: "pret", headerName: "Pret", type: "number", width: 120,headerAlign: "center", align: "center", },
     {
       field: "status",
       headerName: "Status",
-      width: 160,
+      width: 160,headerAlign: "center", align: "center",
     },
-    { field: "categorie", headerName: "Categorie", width: 130 },
+    { field: "categorie", headerName: "Categorie", width: 130,headerAlign: "center", align: "center", },
     {
       field: "action",
       headerName: "Action",
-      width: 130,
+      width: 140,headerAlign: "center", align: "center",
       renderCell: renderDetailsButton,
     },
   ];
@@ -237,10 +239,12 @@ export default function MiniDrawer() {
     setRows([]);
   };
 
-  const handleDelete = (row) => {
-    const newRow = rows.filter((row) => row.id !== id);
-    setRows(newRows);
+
+  const handleDelete = (id) => {
+    const updatedRows = rows.filter((row) => row.id !== id);
+    setRows(updatedRows);
   };
+
 
   const handleEdit = (row) => {
     console.log(row);

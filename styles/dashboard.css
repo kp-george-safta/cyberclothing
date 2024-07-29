@@ -213,3 +213,8 @@ body {
 .logo {
   cursor: pointer;
 }
+
+
+.buton-pozitie {
+  text-align: right;
+}
