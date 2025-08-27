@@ -1,5 +1,6 @@
 import LogoImage from "../assets/logo.svg";
 import Loginicon from "../assets/loginicon.svg";
+import { Routes, Route, Link } from 'react-router-dom'
 
 export function Header() {
   const links = [
@@ -16,8 +17,6 @@ export function Header() {
       <div className="logo">
         <a href="/">
           <svg
-            width="1470"
-            height="493"
             viewBox="0 0 1470 493"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +46,7 @@ export function Header() {
       <ul className="header-links">
         {links.map((link) => (
           <li key={link.name}>
-            <a href={link.href}>{link.name}</a>
+            <Link to={link.href}>{link.name}</Link>
           </li>
         ))}
       </ul>
@@ -85,10 +84,10 @@ export function Header() {
             d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
           ></path>
         </svg>
-        <a className="login-button" href="/login">
+        <Link className="login-button" to="/login">
           {" "}
           <img className="loginicon" src={Loginicon} />
-        </a>
+        </Link>
       </div>
     </nav>
   );

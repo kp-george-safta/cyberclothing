@@ -1,28 +1,41 @@
 .header {
-  background-color: rgb(67, 102, 229);
-  font-size: 24px;
+  height: 150px;
+  background: linear-gradient(rgba(28, 51, 135, 0.672), purple);
+
+  font-size: 36px;
   display: flex;
+  justify-content: space-around;
 
   .header-links {
     display: flex;
-    gap: 35px;
+    gap: 50px;
     color: white;
     align-items: center;
     justify-content: space-between;
     margin-right: 10px;
-    a{color:white;
-    text-decoration: none;}
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
 
   .header-icons {
     display: flex;
     justify-content: flex-end;
-    gap: 35px;
+    align-content: center;
+    gap: 20px;
+
+    svg,img  {
+    align-content: center;
+      width: 64px;
+      height: 64px;
+    }
   }
 
   .loginicon {
-    width: 64px;
-    height: 64px;
+    display: flex;
+    justify-content: flex-end;
+
   }
 
   .login-button svg {
@@ -31,6 +44,8 @@
   }
 
   .logo svg {
-    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    width: 400px;
   }
 }
