@@ -1,0 +1,36 @@
+.header {
+  background-color: rgb(67, 102, 229);
+  font-size: 24px;
+  display: flex;
+
+  .header-links {
+    display: flex;
+    gap: 35px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    a{color:white;
+    text-decoration: none;}
+  }
+
+  .header-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+  }
+
+  .loginicon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .login-button svg {
+    width: 64px;
+    height: 64px;
+  }
+
+  .logo svg {
+    width: 300px;
+  }
+}
