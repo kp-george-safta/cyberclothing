@@ -1,6 +1,6 @@
 .header {
   height: 150px;
-  background: linear-gradient(rgba(28, 51, 135, 0.672), purple);
+  background: linear-gradient(30deg,rgb(0, 0, 0), rgb(255, 250, 255));
 
   font-size: 36px;
   display: flex;
@@ -21,6 +21,7 @@
 
   .header-icons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-content: center;
     gap: 20px;
@@ -47,5 +48,10 @@
     display: flex;
     justify-content: flex-start;
     width: 400px;
+  }
+  .checkout svg{
+    display: flex;
+    width: 64px;
+    height:64px;
   }
 }
