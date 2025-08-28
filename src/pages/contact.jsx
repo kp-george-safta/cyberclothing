@@ -1,8 +1,8 @@
 function Contact() {
     return (
-        <div>
-        <h1 className="contact-title">Contact us here:</h1>
         <div className="contact-elements">
+        <h1 className="contact-title">Contact us here:</h1>
+        <div >
             
         <p>E-mail:cyberclothing@gmail.com</p>
         <p>Telephone Number: +40722338971</p>
