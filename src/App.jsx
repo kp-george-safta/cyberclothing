@@ -9,11 +9,12 @@ import Checkout from './pages/checkout';
 import Blog from './pages/blog';
 import Contact from './pages/contact';
 import Download from './pages/download';
+import TrademarkP from './pages/trademark.jsx';
 
 function App() {
   return (
     <>
-      <Header/>
+     <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -22,10 +23,13 @@ function App() {
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/download" element={<Download/>}/>
+        <Route path="/trademark" element={<TrademarkP/>} />
+
       </Routes>
       <Footer/>
     </>
   )
 }
+
 
 export default App

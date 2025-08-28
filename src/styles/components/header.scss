@@ -1,11 +1,11 @@
 .header {
-  height: 150px;
-  background: linear-gradient(30deg,rgb(0, 0, 0), rgb(255, 250, 255));
+  height: 100px;
+  background:(gray);
 
   font-size: 36px;
   display: flex;
-  justify-content: space-around;
-
+  justify-content: space-between;
+padding: 0 20px;
   .header-links {
     display: flex;
     gap: 50px;
@@ -16,6 +16,7 @@
     a {
       color: white;
       text-decoration: none;
+      font-size: x-large;
     }
   }
 
@@ -28,8 +29,8 @@
 
     svg,img  {
     align-content: center;
-      width: 64px;
-      height: 64px;
+      width: 32px;
+      height: 32px;
     }
   }
 
@@ -40,14 +41,16 @@
   }
 
   .login-button svg {
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
   }
 
   .logo svg {
     display: flex;
-    justify-content: flex-start;
-    width: 400px;
+    justify-content: center;
+    align-items: center;
+    
+    width: 200px;
   }
   .checkout svg{
   fill: black;
