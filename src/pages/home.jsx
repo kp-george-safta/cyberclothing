@@ -1,5 +1,5 @@
-import ProductBox from "../components/ProductBox";
 
+import ProductBox from "../components/ProductBox";
 function Home() {
   const products = [
     {

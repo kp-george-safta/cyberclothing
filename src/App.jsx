@@ -13,7 +13,7 @@ import Download from './pages/download';
 function App() {
   return (
     <>
-      <Header/>
+     <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -22,6 +22,7 @@ function App() {
         <Route path="/blog" element={<Blog/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/download" element={<Download/>}/>
+
       </Routes>
       <Footer/>
     </>
