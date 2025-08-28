@@ -1,0 +1,10 @@
+.product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .product-box {
+        box-sizing: border-box;
+        width: 25%;
+        padding: 25px;
+    }
+}

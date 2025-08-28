@@ -1,6 +1,7 @@
 import LogoImage from "../assets/logo.svg";
 import Loginicon from "../assets/loginicon.svg";
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link } from "react-router-dom";
+import Checkout from "../assets/checkout.svg";
 
 export function Header() {
   const links = [
@@ -8,14 +9,13 @@ export function Header() {
     { name: "Contact", href: "/contact" },
     { name: "Download", href: "/download" },
     { name: "Blog", href: "/blog" },
+    
   ];
-
-  console.log("Avem asta:", LogoImage);
 
   return (
     <nav className="header">
       <div className="logo">
-        <a href="/">
+        <Link to="/">
           <svg
             viewBox="0 0 1470 493"
             fill="none"
@@ -41,7 +41,7 @@ export function Header() {
               </clipPath>
             </defs>
           </svg>
-        </a>
+        </Link>
       </div>
       <ul className="header-links">
         {links.map((link) => (
@@ -52,14 +52,9 @@ export function Header() {
       </ul>
 
       <div className="header-icons">
-        {" "}
-        <svg className="checkout">
-      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="bag">
-    <path fill-rule="evenodd" d="M16 5A5 5 0 0 0 6 5H3v16h16V5zm-5-3a3 3 0 0 1 3 3H8a3 3 0 0 1 3-3M5 19h12V7H5z"></path>
-
-  </symbol>
-
-        </svg>
+        <Link className="checkout-button" to="/Checkout">
+          <img className="checkout" src={Checkout} />
+        </Link>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
