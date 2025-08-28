@@ -1,0 +1,27 @@
+.product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .product-box {
+        box-sizing: border-box;
+        width: 25%;
+        padding: 25px;
+    }
+    .product-name{
+        font-size: x-large;
+        font:bold;
+        text-decoration: underline;
+        
+    }
+    .product-tag{
+        font:bold;
+        font-size: medium;
+
+    }
+    .product-price{
+        font-size: medium;
+    }
+
+
+
+}
