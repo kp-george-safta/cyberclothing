@@ -1,51 +1,68 @@
-.footer1{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: pink;
-    height: 40px;
+.footer1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: pink;
+  height: 40px;
 }
-.footer-links{
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-    align-items: center;
-    height:100%;
-    text-decoration: none;
-    gap: 30px;
-    
+.footer-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  gap: 30px;
 }
 .footer-links li:nth-child(1),
-.footer-links li:nth-child(2){
-    //font-size:10px;
-    font-weight: bold;
-    text-decoration: none;
-    border: 2px solid rgba(black, 100%);
-    border-radius: 20px;
-    padding: 5px;
+.footer-links li:nth-child(2) {
+  //font-size:10px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid rgba(black, 100%);
+  border-radius: 20px;
+  padding: 5px;
 }
-.footer-icons{
-    display: flex;
-    gap: 15px;
+.footer-icons {
+  display: flex;
+  gap: 15px;
 }
 .twiter-logo,
 .yt-logo,
 .facebook-logo,
 .footer-icons img {
-    width: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-links a {
+  color: black;
+  text-decoration: none;
+}
+.footer2 {
+  display: flex;
+  justify-content: center;
+  background-color: tomato;
+}
+.footer2 p {
+  color: brown;
+  font-size: 100;
+}
+.footer3 {
+    background-color: gray;
+    height: 80px;
+    align-items: center;
+}
+.pay-apps {
+    margin-left: 200px;
+    margin-right: 200px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
 }
-.footer-links a{
-    color: black;
-    text-decoration: none;
-}
-.footer2{
-    display: flex;
-    justify-content: center;
-    background-color: tomato;
-}
-.footer-text{
-
-    color:brown
+.pay-apps li:nth-child(1) {
+    border-radius:6px;
+    overflow: hidden;
 }
