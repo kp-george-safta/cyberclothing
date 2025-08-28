@@ -1,3 +1,4 @@
+import { Routes, Route, Link } from "react-router-dom";
 import fbLogo from "../assets/social/facebook.svg";
 import klarnaLogo from '../assets/shops/klarna.png';
 import maestroLogo from '../assets/shops/maestro.png';
@@ -7,7 +8,7 @@ import visaLogo from '../assets/shops/visa.png';
 
 export function Footer() {
   const Links = [
-    { name: "Trademark Policy", url: "/trademark-policy" },
+    { name: "Trademark Policy", url: "/trademark" },
     { name: "Privacy Policy", url: "/privacy-policy" },
     { name: "Code of Conduct", url: "/code-of-conduct" },
     { name: "Security Policy", url: "/security-policy" },
@@ -20,15 +21,15 @@ export function Footer() {
     { shopLogo: maestroLogo, url: "https://www.maestro.com/", name: "Maestro" },
   ];
 
-  const logoArray = [, ]
+  //const logoArray = [, ]
   return (
     <footer className="footer">
       <div className="footer1">
         <nav>
           <ul className="footer-links">
             {Links.map((link) => (
-              <li>
-                <a href={link.url}>{link.name}</a>
+              <li key={link.name}>
+                <Link to={link.url}>{link.name}</Link>
               </li>
             ))}
           </ul>
