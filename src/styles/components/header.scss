@@ -58,3 +58,27 @@ padding: 0 20px;
     height:64px;
   }
 }
+.modal {
+  position: relative;
+  width: 200px;
+  background: white;
+
+}
+.closeM {
+  position:absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  transition: font-size 0.2s, top 0.2s, right 0.2s;
+    &:hover {
+      font-size: 30px;
+      top: 12px;
+      right: 12px;
+
+    }
+}
+.titleM {
+  padding-top: 30px;
+}

@@ -84,13 +84,18 @@ export function Header() {
           ></path>
         </svg>
         <div>
+          <p>
+            L
+          </p>
+        </div>
+        <div  className="modal">
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             contentLabel="Example Modal"
           >
-            <h2>Hello</h2>
-            <button onClick={closeModal}>x</button>
+            <h2 className="titleM">Hello</h2>
+            <button className="closeM" onClick={closeModal}>&times;</button>
             <div>I am a modal</div>
           </Modal>
         </div>
