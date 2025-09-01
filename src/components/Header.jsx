@@ -7,7 +7,7 @@ import Modal from "react-modal";
 
 export function Header() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
-
+  const [loginInfo, setLoginInfo] = React.useState("");
   const links = [
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
@@ -22,7 +22,9 @@ export function Header() {
   function closeModal() {
     setIsOpen(false);
   }
-
+  function loginUsername(event) {
+    setLoginInfo(event.target.value);
+  }
   return (
     <nav className="header">
       <div className="logo">
@@ -85,7 +87,7 @@ export function Header() {
         </svg>
         <div>
           <p>
-            L
+            {loginInfo}
           </p>
         </div>
         <div  className="modal">
@@ -96,7 +98,15 @@ export function Header() {
           >
             <h2 className="titleM">Hello</h2>
             <button className="closeM" onClick={closeModal}>&times;</button>
-            <div>I am a modal</div>
+            <div>
+              <p>
+                I am a modal
+              </p>
+              <input type="text" value={loginInfo} onChange={loginUsername}/>
+              <p>
+                {loginInfo}
+              </p>
+            </div>
           </Modal>
         </div>
         <Link className="login-button" onClick={openModal}>
