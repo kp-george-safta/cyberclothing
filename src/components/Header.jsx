@@ -2,15 +2,26 @@ import LogoImage from "../assets/logo.svg";
 import Loginicon from "../assets/loginicon.svg";
 import { Routes, Route, Link } from "react-router-dom";
 import Checkout from "../assets/checkout.svg";
+import React from "react";
+import Modal from "react-modal";
 
 export function Header() {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
   const links = [
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
     { name: "Download", href: "/download" },
     { name: "Blog", href: "/blog" },
-    
   ];
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   return (
     <nav className="header">
@@ -72,7 +83,23 @@ export function Header() {
             d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
           ></path>
         </svg>
-        <Link className="login-button" to="/login">
+        <div>
+          <p>
+            L
+          </p>
+        </div>
+        <div  className="modal">
+          <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            contentLabel="Example Modal"
+          >
+            <h2 className="titleM">Hello</h2>
+            <button className="closeM" onClick={closeModal}>&times;</button>
+            <div>I am a modal</div>
+          </Modal>
+        </div>
+        <Link className="login-button" onClick={openModal}>
           {" "}
           <img className="loginicon" src={Loginicon} />
         </Link>
