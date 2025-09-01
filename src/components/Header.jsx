@@ -25,6 +25,15 @@ export function Header() {
   function loginUsername(event) {
     setLoginInfo(event.target.value);
   }
+  const customStyles = {
+    content: {
+      left: '30%',
+      right: '30%',
+    },
+    overlay: {
+      backgroundColor: 'rgba(0,0,0,0.65)',
+    },
+  };
   return (
     <nav className="header">
       <div className="logo">
@@ -90,25 +99,24 @@ export function Header() {
             {loginInfo}
           </p>
         </div>
-        <div  className="modal">
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             contentLabel="Example Modal"
+            style={customStyles}
           >
-            <h2 className="titleM">Hello</h2>
             <button className="closeM" onClick={closeModal}>&times;</button>
-            <div>
-              <p>
+            <div className="log">
+              <h2 className="log-title">LOGIN</h2>
+              <p className="log-p">
                 Please inser your username:
               </p>
-              <input type="text" value={loginInfo} onChange={loginUsername}/>
+              <input className="log-input" type="text" value={loginInfo} onChange={loginUsername}/>
               <p>
                 {loginInfo}
               </p>
             </div>
           </Modal>
-        </div>
         <Link className="login-button" onClick={openModal}>
           {" "}
           <img className="loginicon" src={Loginicon} />

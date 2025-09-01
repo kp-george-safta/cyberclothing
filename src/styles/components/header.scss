@@ -73,10 +73,6 @@ padding: 0 20px;
   }
   
 }
-.modal {
-  position: relative;
-
-}
 .closeM {
   position:absolute;
   top: 15px;
@@ -94,4 +90,36 @@ padding: 0 20px;
 }
 .titleM {
   padding-top: 30px;
+}
+.log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .log-title {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .log-p {
+    margin-bottom: 10px;
+  }
+  .log-input {
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-width: 0.1px;
+    border-color: rgba(128, 128, 128, 0.2);
+    border-radius: 3px;
+  }
+  .log-input:hover {
+    background-color: rgba(128, 128, 128, 0.4);
+    border-color: rgba(128, 128, 128, 0.5);
+    border-radius: 3px;
+  }
+  .log-input:focus {
+    border-color: black;
+    outline-color: black;
+    border-radius: 3px;
+  }
 }
