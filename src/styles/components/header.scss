@@ -57,6 +57,21 @@ padding: 0 20px;
     width: 64px;
     height:64px;
   }
+  .username-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    .username {
+    display: inline-block;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+      color: white;
+      font-size: 30px;
+  }
+  }
+  
 }
 .modal {
   position: relative;
