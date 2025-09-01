@@ -8,7 +8,10 @@
   display: inline-block;
   padding-bottom: 5px;
 }
-.download-icons{ display:flex;
+.download-icons img{ 
+  width: 200px;
+  height: 200px;
     font-size: 1rem;
     font-weight: 500;
+
 }
