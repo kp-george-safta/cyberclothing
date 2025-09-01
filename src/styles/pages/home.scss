@@ -1,4 +1,5 @@
 .product-wrapper {
+
     display: flex;
     flex-wrap: wrap;
 
@@ -8,9 +9,15 @@
         padding: 25px;
     }
     .product-name{
+         
+    display: inline-block;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+
         font-size: x-large;
-        font:bold;
-        text-decoration: underline;
+        font-weight:bold;
         
     }
     .product-tag{
@@ -24,4 +31,14 @@
 
 
 
+}
+.Home-title{
+    font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ff6f61; /* accent underline */
+  display: inline-block;
+  padding-bottom: 5px;
 }
