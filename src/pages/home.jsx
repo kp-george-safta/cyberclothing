@@ -5,17 +5,17 @@ function Home() {
     {
       id: 1,
       imgSrc: "/public/products/j4cavestone.png",
-      name: "Air Jordan NON RETRO...",
-      price: "1116",
+      name: "Air Jordan 4 Retro Cave Stone",
+      price: "1016",
       currency: "RON",
       tag: "NOU",
     },
     {
       id: 2,
       imgSrc: "/public/products/jordan4 blue.jpg",
-      name: "Air Jordan RETRO...",
-      price: "234",
-      currency: "USD",
+      name: "Air Jordan 4 Retro W Denim Worn Blue",
+      price: "1016",
+      currency: "RON",
       tag: "NOU",
     },
     {
@@ -29,7 +29,7 @@ function Home() {
     {
       id: 4,
       imgSrc: "/public/products/jordan4 blue.jpg",
-      name: "Air Jordan RETRO...",
+      name: "",
       price: "111",
       currency: "EUR",
       tag: "VECHI",
@@ -47,7 +47,11 @@ function Home() {
 
   return (
     <div>
-      <div>Home page</div>
+      <div className="Home-title">
+        <h1>Home page</h1>
+        <p></p>
+        <p>Welcome to our sneaker section</p>
+      </div>
 
       <div className="product-wrapper">
         {products.map((product) => (
