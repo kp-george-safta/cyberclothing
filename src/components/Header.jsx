@@ -81,6 +81,12 @@ export function Header() {
           <Darkmode></Darkmode>
         </div>
         <div className="modal">
+        
+        <div className="username-wrapper">
+          <p className="username">
+            {loginInfo}
+          </p>
+        </div>
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
@@ -91,6 +97,17 @@ export function Header() {
               &times;
             </button>
             <div>I am a modal</div>
+            <button className="closeM" onClick={closeModal}>&times;</button>
+            <div className="log">
+              <h2 className="log-title">LOGIN</h2>
+              <p className="log-p">
+                Please inser your username:
+              </p>
+              <input className="log-input" type="text" value={loginInfo} onChange={loginUsername}/>
+              <p>
+                {loginInfo}
+              </p>
+            </div>
           </Modal>
         </div>
         <Link className="login-button" onClick={openModal}>
