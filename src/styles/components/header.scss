@@ -138,6 +138,9 @@ padding: 0 20px;
  #theme-switch svg{
   fill: var(--primary-color);
  }
+ #theme-switch:hover svg{
+  cursor: pointer;
+ }
  #theme-switch svg:last-child{
   display:none;
  }
