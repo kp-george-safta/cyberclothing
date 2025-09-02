@@ -42,14 +42,7 @@ align-items: center;
     fill: white;
   }
 
-  .login-button svg {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    fill: white;
-    width: 64px;
-    height: 64px;
-  }
+  
 
   .logo svg {
     display: flex;
@@ -57,6 +50,15 @@ align-items: center;
     align-items: center;
     
     width: 200px;
+  }
+  .login-button svg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    fill: white;
+    width: 64px;
+    height: 64px;
+    margin-top: 15px;
   }
   .checkout-button{
   fill: rgb(252, 252, 252);
@@ -142,9 +144,11 @@ align-items: center;
   align-items: center;
   top:20px;
   right:20px;
+  border:none;
  }
  #theme-switch svg{
   fill: var(white);
+  margin-top: 10px;
  }
  #theme-switch:hover svg{
   cursor: pointer;
