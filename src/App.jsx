@@ -10,6 +10,7 @@ import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Download from "./pages/download";
 import TrademarkP from "./pages/trademark.jsx";
+import PPage from "./pages/ProductPage.jsx";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/download" element={<Download />} />
           <Route path="/trademark" element={<TrademarkP />} />
+          <Route path="/ProductPage" element={<PPage />} />
         </Routes>
       </main>
       <Footer />
