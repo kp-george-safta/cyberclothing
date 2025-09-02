@@ -8,7 +8,7 @@ import Darkmode from "../darkmode";
 
 export function Header() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
-
+  const [loginInfo, setLoginInfo] = React.useState("");
   const links = [
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
@@ -23,7 +23,18 @@ export function Header() {
   function closeModal() {
     setIsOpen(false);
   }
-
+  function loginUsername(event) {
+    setLoginInfo(event.target.value);
+  }
+  const customStyles = {
+    content: {
+      left: '30%',
+      right: '30%',
+    },
+    overlay: {
+      backgroundColor: 'rgba(0,0,0,0.65)',
+    },
+  };
   return (
     <nav className="header">
       <div className="logo">
@@ -72,17 +83,30 @@ export function Header() {
         <div>
           <Darkmode></Darkmode>
         </div>
-        <div  className="modal">
+        
+        <div className="username-wrapper">
+          <p className="username">
+            {loginInfo}
+          </p>
+        </div>
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             contentLabel="Example Modal"
+            style={customStyles}
           >
-            <h2 className="titleM">Hello</h2>
             <button className="closeM" onClick={closeModal}>&times;</button>
-            <div>I am a modal</div>
+            <div className="log">
+              <h2 className="log-title">LOGIN</h2>
+              <p className="log-p">
+                Please inser your username:
+              </p>
+              <input className="log-input" type="text" value={loginInfo} onChange={loginUsername}/>
+              <p>
+                {loginInfo}
+              </p>
+            </div>
           </Modal>
-        </div>
         <Link className="login-button" onClick={openModal}>
           {" "}
           <img className="loginicon" src={Loginicon} />
