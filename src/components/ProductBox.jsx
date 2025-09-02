@@ -1,6 +1,9 @@
-
+import {Link} from "react-router-dom";
 const ProductBox = ({product}) => (
-  <div className="product-box">
+ <Link to={`/${product.id}/productpage`}
+    state={{ product }}     // pass product as route state
+    style={{ textDecoration: "none", color: "inherit" }}>
+ <div className="product-box">
     <div className="product-image">
       <img src={product.imgSrc} alt="shoe" style={{width: '100%'}} />
       <img className="favorite" src="" alt="" />
@@ -14,6 +17,7 @@ const ProductBox = ({product}) => (
       <span className="product-tag">{product.tag}</span>
     </div>
   </div>
+  </Link>
 );
 
 export default ProductBox;

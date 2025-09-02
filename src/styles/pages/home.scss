@@ -84,12 +84,10 @@
 :root {
   background-color: white;
 
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
+ 
+  .footer{
+  min-height: 100hv;
+}
   .header {
     background-color: rgb(49, 49, 214);
   }
@@ -129,5 +127,85 @@
   }
   .blog-elements {
     background-color: black;
+  }
+  .home-title{
+    color: white;
+  }
+}
+.ppbox {
+  display: flex;
+  flex-direction:row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  
+  justify-content: start;
+  align-items: center;
+  
+
+    .ppname {
+    display: inline-block;
+    width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .pptag {
+    font-weight: 700;
+    font-size: 14px;
+    color: lightgrey;
+    border: 1px solid lightgrey;
+    border-width: 2px;
+
+    border-radius: 6px;
+    padding: 4px 8px;
+  }
+
+  .ppprice {
+
+    font-size: 25px;
+    
+
+    .ppcurrency {
+      margin-left: 10px;
+      font-size: 25px;
+    }
+
+  }
+
+  .ppimg {
+    margin-left: px;
+
+    
+  }
+  .pptext{
+    margin-right: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 5px;
+  }
+  .ppcart{
+    background-color: rgb(61, 199, 61);
+    &:hover {
+        cursor: pointer;
+    }
+  }
+  .ppvalue{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .ppid{
+    display: none;
   }
 }

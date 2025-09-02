@@ -35,7 +35,7 @@ function Darkmode() {
 
         aria-hidden="true"
         data-slot="icon"
-        className="hiddenn dark:block"
+        
         height="20"
       >
         <path
