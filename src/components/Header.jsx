@@ -2,13 +2,15 @@ import LogoImage from "../assets/logo.svg";
 
 import { Routes, Route, Link } from "react-router-dom";
 
-import React from "react";
+import React, { useState } from "react";
 import Modal from "react-modal";
 import Darkmode from "../darkmode";
 
 export function Header() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
-  const [loginInfo, setLoginInfo] = React.useState("");
+  const [email, setLoginEmail] = React.useState("");
+  const [password, setLoginPassword] = React.useState("");
+  const [message, setLoginMessage] = React.useState("");
 
   const links = [
     { name: "About", href: "/about" },
@@ -24,7 +26,25 @@ export function Header() {
   function closeModal() {
     setIsOpen(false);
   }
-
+  const handleLogin = async () => {
+    try{
+      const res = await fetch("/src/assets/users.json");
+      const users = await res.json();
+      //console.log(users);
+      const user = users.find(
+        (u) => u.email === email && u.password === password
+      );
+      if(user){
+        setLoginMessage(`Welcome, ${user.name}!`);
+      } else {
+        setLoginMessage('Invalid login credentials');
+      }
+    }
+    catch(err){
+      setLoginMessage('Login Failed');
+      console.error(err);
+    }
+  };
   return (
     <nav className="header">
       <div className="logo">
@@ -83,7 +103,7 @@ export function Header() {
         </div>
         <div className="modal">
           <div className="username-wrapper">
-            <p className="username">{loginInfo}</p>
+            <p className="username">{email}</p>
           </div>
           <Modal
             isOpen={modalIsOpen}
@@ -95,14 +115,23 @@ export function Header() {
             </button>
             <div className="log">
               <h2 className="log-title">LOGIN</h2>
-              <p className="log-p">Please inser your username:</p>
+              <p className="log-p">Please insert your username:</p>
               <input
                 className="log-input"
-                type="text"
-                value={loginInfo}
-                onChange={(e) => setLoginInfo(e.target.value)}
-              />
-              <p>{loginInfo}</p>
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setLoginEmail(e.target.value)}
+              /> <br></br>
+              <input
+                className="log-input"
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setLoginPassworsd(e.target.value)}
+              /> <br></br>
+              <button onClick={handleLogin}>Login</button>
+              <p>{message}</p>
             </div>
           </Modal>
         </div>

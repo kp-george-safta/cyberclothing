@@ -82,7 +82,7 @@
   }
 }
 :root {
-  background-color: white;
+  background-color: #fdfdfd;
 
   .footer {
     position: fixed;
@@ -91,43 +91,53 @@
     width: 100%;
   }
   .header {
-    background-color: rgb(49, 49, 214);
+    background-color: #669EFF;
   }
   .footer3 {
-    background-color: rgb(49, 49, 214);
+    background-color: #669EFF;
   }
 }
 .darkmode {
-  background-color: rgb(0, 0, 0);
+  background-color: #323232;
   .header {
-    background-color: rgb(70, 26, 59);
+    background-color: #7d3a9b;
+  }
+  .footer1 {
+    background-color: #7d3a9b;
+  }
+  .footer-links a{
+    color: #FFFFFF;
+    .footer-links li:nth-child(1),
+    .footer-links li:nth-child(2) {
+    border-color:#FFFFFF;
+}
   }
   .footer3 {
-    background-color: rgb(70, 26, 59);
+    background-color: #7d3a9b;
   }
-  color: white;
-  .Home-title {
-    color: white;
+  color: #FFFFFF;
+  .home-title {
+    color: #FFFFFF;
   }
   .contact-elements {
-    background-color: black;
+    background-color: #121212;
   }
   .contact-title {
-    color: white;
+    color: #FFFFFF;
   }
   .about-title {
-    color: white;
+    color: #FFFFFF;
   }
   .about-elements {
-    background-color: black;
+    background-color: #121212;
   }
   .download-title {
-    color: white;
+    color: #FFFFFF;
   }
   .blog-title {
-    color: white;
+    color: #FFFFFF;
   }
   .blog-elements {
-    background-color: black;
+    background-color: #121212;
   }
 }
