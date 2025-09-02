@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
 padding: 0 20px;
+align-items: center;
   .header-links {
     display: flex;
     gap: 50px;
@@ -37,12 +38,17 @@ padding: 0 20px;
   .loginicon {
     display: flex;
     justify-content: flex-end;
-
+    align-items: center;
+    fill: white;
   }
 
   .login-button svg {
-    width: 32px;
-    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    fill: white;
+    width: 64px;
+    height: 64px;
   }
 
   .logo svg {
@@ -52,10 +58,12 @@ padding: 0 20px;
     
     width: 200px;
   }
-  .checkout svg{
-  fill: black;
+  .checkout-button{
+  fill: rgb(252, 252, 252);
     width: 64px;
+    display: flex;
     height:64px;
+    align-items: center;
   }
   .username-wrapper {
     display: flex;
@@ -136,7 +144,7 @@ padding: 0 20px;
   right:20px;
  }
  #theme-switch svg{
-  fill: var(--primary-color);
+  fill: var(white);
  }
  #theme-switch:hover svg{
   cursor: pointer;
@@ -144,10 +152,17 @@ padding: 0 20px;
  #theme-switch svg:last-child{
   display:none;
  }
+
  
  .darkmode #theme-switch svg:first-child{
   display:none;
+  fill: white;
  }
  .darkmode #theme-switch svg:last-child{
   display:block;
+  fill:white;
+ }
+ .themeswitch{
+  fill:white;
+
  }
