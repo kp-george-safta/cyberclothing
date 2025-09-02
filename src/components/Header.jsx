@@ -4,6 +4,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Checkout from "../assets/checkout.svg";
 import React from "react";
 import Modal from "react-modal";
+import Darkmode from "../darkmode";
 
 export function Header() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -72,11 +73,16 @@ export function Header() {
           </li>
         ))}
       </ul>
+      
 
       <div className="header-icons">
         <Link className="checkout-button" to="/Checkout">
           <img className="checkout" src={Checkout} />
         </Link>
+             
+        <div>
+          <Darkmode></Darkmode>
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

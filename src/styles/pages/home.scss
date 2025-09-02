@@ -1,3 +1,6 @@
+#page {
+    min-height: 100vh;
+}
 .product-wrapper {
 
     display: flex;
@@ -41,4 +44,50 @@
   border-bottom: 2px solid #ff6f61; /* accent underline */
   display: inline-block;
   padding-bottom: 5px;
+}
+:root{
+    background-color: white;
+    .header{
+        background-color: rgb(49, 49, 214);
+    }
+    .footer3{
+        background-color:  rgb(49, 49, 214);
+    }
+}
+.darkmode{
+    background-color: rgb(0, 0, 0);
+    .header{
+        background-color: rgb(70, 26, 59);
+    }
+    .footer3{
+        background-color:  rgb(70, 26, 59);
+
+    }
+    color:white;
+    .Home-title{
+        color:white;
+    }
+.contact-elements{
+    background-color: black;
+}
+.contact-title{
+    color: white;
+}
+.about-title{
+    color: white;
+}
+.about-elements{
+    background-color: black;
+}
+.download-title{
+    color:white;
+}
+.blog-title{
+    color:white;
+
+}
+.blog-elements{
+    background-color: black;
+}
+
 }

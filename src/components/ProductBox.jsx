@@ -9,7 +9,7 @@ const ProductBox = ({product}) => (
     <div>
       <h3 className="product-name">{product.name}</h3>
       <p className="product-price">
-        {product.price}
+       <span> {product.price} </span>
         <span className="product-currency">{product.currency}</span>
       </p>
       <span className="product-tag">{product.tag}</span>
