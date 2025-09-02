@@ -41,7 +41,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/download" element={<Download />} />
           <Route path="/trademark" element={<TrademarkP />} />
-          <Route path="/ProductPage" element={<PPage />} />
+          <Route path="/:id/productpage" element={<PPage />} />
         </Routes>
       </main>
       <Footer />

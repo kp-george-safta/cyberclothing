@@ -90,11 +90,6 @@ export function Header() {
             onRequestClose={closeModal}
             contentLabel="Example Modal"
           >
-            <h2 className="titleM">Hello</h2>
-            <button className="closeM" onClick={closeModal}>
-              &times;
-            </button>
-            <div>I am a modal</div>
             <button className="closeM" onClick={closeModal}>
               &times;
             </button>
