@@ -65,7 +65,8 @@ align-items: center;
     width: 64px;
     display: flex;
     height:64px;
-    align-items: center;
+
+margin-top:8px;
   }
   .username-wrapper {
     display: flex;
@@ -169,4 +170,19 @@ align-items: center;
  .themeswitch{
   fill:white;
 
+ }
+ .topnav{
+  background-color: white;
+  border-radius: 5%;
+  border-width: 0;
+width: 150px;
+height: 40px;
+margin-top: 13px;
+align-items: center;
+
+
+
+ }
+ .username{
+margin-top:15px;
  }

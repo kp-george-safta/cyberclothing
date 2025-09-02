@@ -6,11 +6,24 @@ function ProductPage() {
   const product = products.find((prod) => Number(prod.id) === Number(id));
 
   return (
-    <div>
-      <p>Product ID: {product.id}</p>
-      <p>Product ID: {product.name}</p>
-      <p>Product ID: {product.price}</p>
-      <p>Product ID: {product.currency}</p>
+    <div className="ppbox">
+      <img
+        className="ppimg"
+        width={"500px"}
+        height={"500px"}
+        src={product.imgSrc}
+      ></img>
+      <div className="pptext">
+        <h1 className="ppname"> {product.name}</h1>
+        <p className="ppid"> {product.id}</p>
+        <div className="ppvalue">
+          <p className="ppprice"> {product.price}</p>
+          <p className="ppcurrency"> {product.currency}</p>
+        </div>
+        <p className="pptag">{product.tag}</p>
+
+        <button className="ppcart">Add to cart</button>
+      </div>
     </div>
   );
 }
