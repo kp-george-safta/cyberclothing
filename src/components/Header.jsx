@@ -11,6 +11,9 @@ export function Header() {
   const [email, setLoginEmail] = React.useState("");
   const [password, setLoginPassword] = React.useState("");
   const [message, setLoginMessage] = React.useState("");
+  const [uname, getLoginUser] = React.useState('');
+  const [extraClassLogin, setExtraClassLogin] = React.useState('');
+  const [extraClassSignup, setExtraClassSignup] = React.useState('d-none');
 
   const links = [
     { name: "About", href: "/about" },
@@ -18,13 +21,25 @@ export function Header() {
     { name: "Download", href: "/download" },
     { name: "Blog", href: "/blog" },
   ];
-
+  let ok = false;
   function openModal() {
     setIsOpen(true);
   }
 
   function closeModal() {
     setIsOpen(false);
+  }
+
+  function openSignUp() {
+    setExtraClassLogin('d-none');
+    setExtraClassSignup('');
+
+  }
+
+  function closeSignUp() {
+    setExtraClassLogin('');
+    setExtraClassSignup('d-none');
+
   }
   const handleLogin = async () => {
     try{
@@ -36,6 +51,7 @@ export function Header() {
       );
       if(user){
         setLoginMessage(`Welcome, ${user.name}!`);
+        getLoginUser(user.name);
       } else {
         setLoginMessage('Invalid login credentials');
       }
@@ -45,6 +61,15 @@ export function Header() {
       console.error(err);
     }
   };
+  const customStyles = {
+    content:{
+      left: '30%',
+      right: '30%',
+    },
+    overlay: {
+      backgroundColor: '#505050ca',
+    },
+  }
   return (
     <nav className="header">
       <div className="logo">
@@ -103,17 +128,20 @@ export function Header() {
         </div>
         <div className="modal">
           <div className="username-wrapper">
-            <p className="username">{email}</p>
+            <p className="username">{uname}</p>
           </div>
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             contentLabel="Example Modal"
+            style= {customStyles}
           >
             <button className="closeM" onClick={closeModal}>
               &times;
             </button>
-            <div className="log">
+            <div 
+            className={`log ${extraClassLogin}`}
+            >
               <h2 className="log-title">LOGIN</h2>
               <p className="log-p">Please insert your username:</p>
               <input
@@ -128,10 +156,21 @@ export function Header() {
                 type="password"
                 placeholder="Password"
                 value={password}
-                onChange={(e) => setLoginPassworsd(e.target.value)}
+                onChange={(e) => setLoginPassword(e.target.value)}
               /> <br></br>
               <button onClick={handleLogin}>Login</button>
               <p>{message}</p>
+              <button onClick={openSignUp}>
+              Sign Up
+            </button>
+            </div>
+            <div
+              className={`sign ${extraClassSignup}`}
+            >
+
+              <button onClick={closeSignUp}>
+              Not Sign Up
+            </button>
             </div>
           </Modal>
         </div>

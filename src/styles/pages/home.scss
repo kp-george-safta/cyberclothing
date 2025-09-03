@@ -115,7 +115,11 @@
   .footer3 {
     background-color: #7d3a9b;
   }
-  color: #FFFFFF;
+  .product-name,
+  .product-currency,
+  .product-price {
+    color: white;
+  }
   .home-title {
     color: #FFFFFF;
   }
@@ -140,4 +144,7 @@
   .blog-elements {
     background-color: #121212;
   }
+}
+.d-none {
+  display: none;
 }
