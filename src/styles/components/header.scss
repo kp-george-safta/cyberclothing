@@ -90,11 +90,9 @@ align-items: center;
   background: none;
   border: none;
   font-size: 20px;
-  transition: font-size 0.2s, top 0.2s, right 0.2s;
+  transition: transform 0.15s;
     &:hover {
-      font-size: 30px;
-      top: 12px;
-      right: 12px;
+      transform: scale(1.5);
 
     }
 }
@@ -169,4 +167,12 @@ align-items: center;
  .themeswitch{
   fill:white;
 
+ }
+ .bottom-buttons{
+  position: absolute;
+  bottom: 50px;
+ }
+ .modal-buttons {
+  width: 100px;
+  height: 30px;
  }

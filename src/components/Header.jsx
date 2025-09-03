@@ -12,8 +12,13 @@ export function Header() {
   const [password, setLoginPassword] = React.useState("");
   const [message, setLoginMessage] = React.useState("");
   const [uname, getLoginUser] = React.useState('');
-  const [extraClassLogin, setExtraClassLogin] = React.useState('');
-  const [extraClassSignup, setExtraClassSignup] = React.useState('d-none');
+  const [hideClass, setHideClass] = React.useState(true);
+  const [password1, setNewPassword] = React.useState("");
+  const [password2, confirmNewPassword] = React.useState("");
+  const [signmessage, setSignUpMessage] = React.useState("");
+  const [emailAdded, setSignUpEmail] = React.useState("");
+  const [unameAdded, setSignUpUname] = React.useState("");
+
 
   const links = [
     { name: "About", href: "/about" },
@@ -30,17 +35,6 @@ export function Header() {
     setIsOpen(false);
   }
 
-  function openSignUp() {
-    setExtraClassLogin('d-none');
-    setExtraClassSignup('');
-
-  }
-
-  function closeSignUp() {
-    setExtraClassLogin('');
-    setExtraClassSignup('d-none');
-
-  }
   const handleLogin = async () => {
     try{
       const res = await fetch("/src/assets/users.json");
@@ -59,6 +53,13 @@ export function Header() {
     catch(err){
       setLoginMessage('Login Failed');
       console.error(err);
+    }
+  };
+  const handleSignup = async () => {
+    if(password1 === password2){
+      setSignUpMessage('Sign Up succeded')
+    } else {
+      setSignUpMessage("Passwords don't match")
     }
   };
   const customStyles = {
@@ -140,7 +141,7 @@ export function Header() {
               &times;
             </button>
             <div 
-            className={`log ${extraClassLogin}`}
+            className={`log ${hideClass ? '' : 'd-none'}`}
             >
               <h2 className="log-title">LOGIN</h2>
               <p className="log-p">Please insert your username:</p>
@@ -158,18 +159,51 @@ export function Header() {
                 value={password}
                 onChange={(e) => setLoginPassword(e.target.value)}
               /> <br></br>
-              <button onClick={handleLogin}>Login</button>
-              <p>{message}</p>
-              <button onClick={openSignUp}>
+              <button className={`modal-buttons`} onClick={handleLogin}>Login</button>
+              <h4>{message}</h4>
+              <button className={`bottom-buttons modal-buttons`} onClick={() => setHideClass(false)}>
               Sign Up
             </button>
             </div>
+            {/*--------------------------------------------------------------*/}
             <div
-              className={`sign ${extraClassSignup}`}
+              className={`log ${hideClass ? 'd-none' : ''}`}
             >
-
-              <button onClick={closeSignUp}>
-              Not Sign Up
+              <h2 className="log-title">SIGN UP</h2>
+              <p className="log-p">Start creating your account:</p>
+              <input
+                className="log-input"
+                type="email"
+                placeholder="Insert email"
+                value={emailAdded}
+                onChange={(e) => setSignUpEmail(e.target.value)}
+              /> <br></br>
+              <input
+                className="log-input"
+                type="text"
+                placeholder="Insert Username"
+                value={unameAdded}
+                onChange={(e) => setSignUpUname(e.target.value)}
+              /> <br></br>
+              <input
+                className="log-input"
+                type="password"
+                placeholder="Create Password"
+                value={password1}
+                onChange={(e) => setNewPassword(e.target.value)}
+              />
+              <input
+                className="log-input"
+                type="password"
+                placeholder="Confirm Password"
+                style={{marginTop: '20px'}}
+                value={password2}
+                onChange={(e) => confirmNewPassword(e.target.value)}
+              />
+              <button className={`modal-buttons`} onClick={handleSignup}>Sign up</button>
+              <h4>{signmessage}</h4>
+              <button className={`bottom-buttons modal-buttons`} onClick={() => setHideClass(true)}>
+              Login
             </button>
             </div>
           </Modal>
