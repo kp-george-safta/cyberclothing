@@ -209,8 +209,14 @@ export function Header() {
                 value={password2}
                 onChange={(e) => confirmNewPassword(e.target.value)}
               />
-              <button className={`modal-buttons`} onClick={handleSignup}>Sign up</button>
-              <h4>{signmessage}</h4>
+              <button 
+              className={`modal-buttons`} 
+              onClick={handleSignup}
+              style={{marginTop: '20px'}}
+              >
+                Sign up
+                </button>
+              <h4 className="bad-mes">{signmessage}</h4>
               <button className={`bottom-buttons modal-buttons`} onClick={() => setHideClass(true)}>
               Login
             </button>
