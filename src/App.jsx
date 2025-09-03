@@ -13,6 +13,8 @@ import TrademarkP from "./pages/trademark.jsx";
 import PPage from "./pages/ProductPage.jsx";
 import { useState, useEffect } from "react";
 
+
+
 function App() {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkmode") === "active"

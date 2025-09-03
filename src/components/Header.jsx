@@ -65,7 +65,6 @@ export function Header() {
       </ul>
 
       <div className="header-icons">
-        <input className="topnav"type="search" placeholder="Search..." ></input>
         <Link className="checkout-button" to="/Checkout">
           <svg
             className="checkout-button"

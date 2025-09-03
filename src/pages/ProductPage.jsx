@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import products from "../assets/products.json";
+import {useCart} from "../CartContext.jsx";
 
 function ProductPage() {
   const { id } = useParams();
   const product = products.find((prod) => Number(prod.id) === Number(id));
-
+  const {addToCart} = useCart();
   return (
     <div className="ppbox">
       <img
@@ -22,7 +23,8 @@ function ProductPage() {
         </div>
         <p className="pptag">{product.tag}</p>
 
-        <button className="ppcart">Add to cart</button>
+
+        <button className="ppcart"onClick={() => addToCart(product)}>Add to cart</button>
       </div>
     </div>
   );
