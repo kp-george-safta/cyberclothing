@@ -18,8 +18,6 @@ export function Header() {
   const [signmessage, setSignUpMessage] = React.useState("");
   const [emailAdded, setSignUpEmail] = React.useState("");
   const [unameAdded, setSignUpUname] = React.useState("");
-
-
   const links = [
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
@@ -55,9 +53,20 @@ export function Header() {
       console.error(err);
     }
   };
+  function validEmail(em) {
+    if(em != '') return true;
+    else return false;
+  }
+
   const handleSignup = async () => {
     if(password1 === password2){
-      setSignUpMessage('Sign Up succeded')
+      if(validEmail(emailAdded) === true && unameAdded != ''){
+        setSignUpMessage('Sign Up succeded')
+        getLoginUser(unameAdded)
+      }
+        else {
+          setSignUpMessage('Information missing')
+        }
     } else {
       setSignUpMessage("Passwords don't match")
     }
