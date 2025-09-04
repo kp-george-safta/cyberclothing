@@ -89,12 +89,11 @@
   background: none;
   border: none;
   font-size: 20px;
-  transition: font-size 0.2s, top 0.2s, right 0.2s;
-  &:hover {
-    font-size: 30px;
-    top: 12px;
-    right: 12px;
-  }
+  transition: transform 0.15s;
+    &:hover {
+      transform: scale(1.5);
+
+    }
 }
 .titleM {
   padding-top: 30px;
@@ -179,3 +178,37 @@
 .username {
   margin-top: 15px;
 }
+
+ .bottom-buttons{
+  position: absolute;
+  bottom: 50px;
+ }
+ .modal-buttons {
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 7px;
+  border-color:#669EFF;
+  color: #669EFF;
+  background-color: rgb(239, 251, 255);
+ }
+ .good-mes {
+  margin-top: 40px;
+  font-size: 25px;
+  border-style: outset;
+  border-width: 4px;
+  padding: 6px 12px;
+  border-radius: 25px;
+  color: rgb(59, 217, 38);
+  border-color: rgb(59, 217, 38);
+ }
+ .bad-mes {
+  margin-top: 40px;
+  font-size: 25px;
+  border-style: outset;
+  border-width: 4px;
+  padding: 6px 12px;
+  border-radius: 25px;
+  color: rgb(217, 38, 38);
+  border-color: rgb(217, 38, 38);
+ }
