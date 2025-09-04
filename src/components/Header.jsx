@@ -18,6 +18,9 @@ export function Header() {
   const [signmessage, setSignUpMessage] = React.useState("");
   const [emailAdded, setSignUpEmail] = React.useState("");
   const [unameAdded, setSignUpUname] = React.useState("");
+  const [hideAccept, setHideAccept] = React.useState(true);
+  const [hideRefuse, setHideRefuse] = React.useState(true);
+
   const links = [
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
