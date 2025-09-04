@@ -85,16 +85,13 @@
   background-color: #fdfdfd;
 
   .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    min-height: 100hv;
   }
   .header {
-    background-color: #669EFF;
+    background-color: #669eff;
   }
   .footer3 {
-    background-color: #669EFF;
+    background-color: #669eff;
   }
 }
 .darkmode {
@@ -105,12 +102,12 @@
   .footer1 {
     background-color: #7d3a9b;
   }
-  .footer-links a{
-    color: #FFFFFF;
+  .footer-links a {
+    color: #ffffff;
     .footer-links li:nth-child(1),
     .footer-links li:nth-child(2) {
-    border-color:#FFFFFF;
-}
+      border-color: #ffffff;
+    }
   }
   .footer3 {
     background-color: #7d3a9b;
@@ -121,29 +118,112 @@
     color: white;
   }
   .home-title {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .contact-elements {
     background-color: #121212;
   }
   .contact-title {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .about-title {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .about-elements {
     background-color: #121212;
   }
   .download-title {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .blog-title {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .blog-elements {
     background-color: #121212;
   }
+  .home-title {
+    color: white;
+  }
+}
+.ppbox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  justify-content: start;
+  align-items: center;
+
+  .ppname {
+    display: inline-block;
+    width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .pptag {
+    font-weight: 700;
+    font-size: 14px;
+    color: lightgrey;
+    border: 1px solid lightgrey;
+    border-width: 2px;
+
+    border-radius: 6px;
+    padding: 4px 8px;
+  }
+
+  .ppprice {
+    font-size: 25px;
+
+    .ppcurrency {
+      margin-left: 10px;
+      font-size: 25px;
+    }
+  }
+
+  .ppimg {
+    margin-left: px;
+  }
+  .pptext {
+    margin-right: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 5px;
+  }
+  .ppcart {
+    background-color: rgb(61, 199, 61);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .ppvalue {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .ppid {
+    display: none;
+  }
+}
+.search-bar {
+  width: 100%;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  margin-left: 10px;
+}
+.darkmode .search-bar {
+  background-color: inherit;
 }
 .d-none {
   display: none;
