@@ -82,68 +82,79 @@
   }
 }
 :root {
-  background-color: white;
+  background-color: #fdfdfd;
 
- 
-  .footer{
-  min-height: 100hv;
-}
+  .footer {
+    min-height: 100hv;
+  }
   .header {
-    background-color: rgb(49, 49, 214);
+    background-color: #669eff;
   }
   .footer3 {
-    background-color: rgb(49, 49, 214);
+    background-color: #669eff;
   }
 }
 .darkmode {
-  background-color: rgb(0, 0, 0);
+  background-color: #323232;
   .header {
-    background-color: rgb(70, 26, 59);
+    background-color: #7d3a9b;
+  }
+  .footer1 {
+    background-color: #7d3a9b;
+  }
+  .footer-links a {
+    color: #ffffff;
+    .footer-links li:nth-child(1),
+    .footer-links li:nth-child(2) {
+      border-color: #ffffff;
+    }
   }
   .footer3 {
-    background-color: rgb(70, 26, 59);
+    background-color: #7d3a9b;
   }
-  color: white;
-  .Home-title {
+  .product-name,
+  .product-currency,
+  .product-price {
     color: white;
+  }
+  .home-title {
+    color: #ffffff;
   }
   .contact-elements {
-    background-color: black;
+    background-color: #121212;
   }
   .contact-title {
-    color: white;
+    color: #ffffff;
   }
   .about-title {
-    color: white;
+    color: #ffffff;
   }
   .about-elements {
-    background-color: black;
+    background-color: #121212;
   }
   .download-title {
-    color: white;
+    color: #ffffff;
   }
   .blog-title {
-    color: white;
+    color: #ffffff;
   }
   .blog-elements {
-    background-color: black;
+    background-color: #121212;
   }
-  .home-title{
+  .home-title {
     color: white;
   }
 }
 .ppbox {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   margin-top: 20px;
   margin-bottom: 20px;
 
-  
   justify-content: start;
   align-items: center;
-  
 
-    .ppname {
+  .ppname {
     display: inline-block;
     width: 100%;
 
@@ -168,36 +179,31 @@
   }
 
   .ppprice {
-
     font-size: 25px;
-    
 
     .ppcurrency {
       margin-left: 10px;
       font-size: 25px;
     }
-
   }
 
   .ppimg {
     margin-left: px;
-
-    
   }
-  .pptext{
+  .pptext {
     margin-right: 250px;
     display: flex;
     flex-direction: column;
     margin-left: 50px;
     gap: 5px;
   }
-  .ppcart{
+  .ppcart {
     background-color: rgb(61, 199, 61);
     &:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
   }
-  .ppvalue{
+  .ppvalue {
     margin-bottom: 10px;
     font-size: 25px;
     font-weight: 600;
@@ -205,19 +211,20 @@
     gap: 5px;
     align-items: center;
   }
-  .ppid{
+  .ppid {
     display: none;
   }
 }
-.search-bar{
-    width: 100%;
-    display: flex;
-    height: 35px;
-justify-content:center;
-margin-left:10px;
-
-
+.search-bar {
+  width: 100%;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  margin-left: 10px;
 }
-.darkmode .search-bar{
-    background-color: inherit;
+.darkmode .search-bar {
+  background-color: inherit;
+}
+.d-none {
+  display: none;
 }

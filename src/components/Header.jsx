@@ -2,13 +2,25 @@ import LogoImage from "../assets/logo.svg";
 
 import { Routes, Route, Link } from "react-router-dom";
 
-import React from "react";
+import React, { useState } from "react";
 import Modal from "react-modal";
 import Darkmode from "../darkmode";
 
 export function Header() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
-  const [loginInfo, setLoginInfo] = React.useState("");
+  const [email, setLoginEmail] = React.useState("");
+  const [password, setLoginPassword] = React.useState("");
+  const [message, setLoginMessage] = React.useState("");
+  const [uname, getLoginUser] = React.useState('');
+  const [hideClass, setHideClass] = React.useState(true);
+  const [password1, setNewPassword] = React.useState("");
+  const [password2, confirmNewPassword] = React.useState("");
+  const [signupSuccessful, setSignupSuccessful] = React.useState(false);
+  const [signmessage, setSignUpMessage] = React.useState("");
+  const [emailAdded, setSignUpEmail] = React.useState("");
+  const [unameAdded, setSignUpUname] = React.useState("");
+  const [hideAccept, setHideAccept] = React.useState(true);
+  const [hideRefuse, setHideRefuse] = React.useState(true);
 
   const links = [
     { name: "About", href: "/about" },
@@ -16,7 +28,7 @@ export function Header() {
     { name: "Download", href: "/download" },
     { name: "Blog", href: "/blog" },
   ];
-
+  let ok = false;
   function openModal() {
     setIsOpen(true);
   }
@@ -25,6 +37,58 @@ export function Header() {
     setIsOpen(false);
   }
 
+  const handleLogin = async () => {
+    try{
+      const res = await fetch("/src/assets/users.json");
+      const users = await res.json();
+      //console.log(users);
+      const user = users.find(
+        (u) => u.email === email && u.password === password
+      );
+      if(user){
+        setLoginMessage(`Welcome, ${user.name}!`);
+        getLoginUser(user.name);
+      } else {
+        setLoginMessage('Invalid login credentials');
+      }
+    }
+    catch(err){
+      setLoginMessage('Login Failed');
+      console.error(err);
+    }
+  };
+  function validEmail(em) {
+    if(em != '') return true;
+    else return false;
+  }
+
+  const handleSignup = async () => {
+    if(password1 === password2){
+      if(validEmail(emailAdded) === true && unameAdded != ''){
+        setSignUpMessage('Sign Up succeded')
+        setSignupSuccessful(true)
+        getLoginUser(unameAdded)
+      }
+        else {
+          setSignUpMessage('Information missing')
+          setSignupSuccessful(false)
+
+        }
+    } else {
+      setSignUpMessage("Passwords don't match")
+      setSignupSuccessful(false)
+
+    }
+  };
+  const customStyles = {
+    content:{
+      left: '30%',
+      right: '30%',
+    },
+    overlay: {
+      backgroundColor: '#505050ca',
+    },
+  }
   return (
     <nav className="header">
       <div className="logo">
@@ -83,26 +147,90 @@ export function Header() {
         </div>
         <div className="modal">
           <div className="username-wrapper">
-            <p className="username">{loginInfo}</p>
+            <p className="username">{uname}</p>
           </div>
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             contentLabel="Example Modal"
+            style= {customStyles}
           >
             <button className="closeM" onClick={closeModal}>
               &times;
             </button>
-            <div className="log">
+            <div 
+            className={`log ${hideClass ? '' : 'd-none'}`}
+            >
               <h2 className="log-title">LOGIN</h2>
-              <p className="log-p">Please inser your username:</p>
+              <p className="log-p">Please insert your username:</p>
+              <input
+                className="log-input"
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setLoginEmail(e.target.value)}
+              /> <br></br>
+              <input
+                className="log-input"
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setLoginPassword(e.target.value)}
+              /> <br></br>
+              <button className={`modal-buttons`} onClick={handleLogin}>Login</button>
+              <h4>{message}</h4>
+              <button className={`bottom-buttons modal-buttons`} onClick={() => setHideClass(false)}>
+              Sign Up
+            </button>
+            </div>
+            {/*--------------------------------------------------------------*/}
+            <div
+              className={`log ${hideClass ? 'd-none' : ''}`}
+            >
+              <h2 className="log-title">SIGN UP</h2>
+              <p className="log-p">Start creating your account:</p>
+              <input
+                className="log-input"
+                type="email"
+                placeholder="Insert email"
+                value={emailAdded}
+                onChange={(e) => setSignUpEmail(e.target.value)}
+              /> <br></br>
               <input
                 className="log-input"
                 type="text"
-                value={loginInfo}
-                onChange={(e) => setLoginInfo(e.target.value)}
+                placeholder="Insert Username"
+                value={unameAdded}
+                onChange={(e) => setSignUpUname(e.target.value)}
+              /> <br></br>
+              <input
+                className="log-input"
+                type="password"
+                placeholder="Create Password"
+                value={password1}
+                onChange={(e) => setNewPassword(e.target.value)}
               />
-              <p>{loginInfo}</p>
+              <input
+                className="log-input"
+                type="password"
+                placeholder="Confirm Password"
+                style={{marginTop: '20px'}}
+                value={password2}
+                onChange={(e) => confirmNewPassword(e.target.value)}
+              />
+              <button 
+              className={`modal-buttons`} 
+              onClick={handleSignup}
+              style={{marginTop: '20px'}}
+              >
+                Sign up
+                </button>
+              {signmessage && (
+                <h4 className={ signupSuccessful ? 'good-mes' : 'bad-mes' }>{signmessage}</h4>
+              )}
+              <button className={`bottom-buttons modal-buttons`} onClick={() => setHideClass(true)}>
+              Login
+            </button>
             </div>
           </Modal>
         </div>

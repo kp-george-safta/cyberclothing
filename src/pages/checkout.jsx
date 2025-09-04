@@ -1,6 +1,4 @@
 import { useCart } from "../CartContext.jsx";
-import "/Users/admin/Desktop/dev/cyberclothing/src/styles/pages/checkout.scss";
-
 const Checkout = () => {
   const { cart, removeFromCart } = useCart();
 
