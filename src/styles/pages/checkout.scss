@@ -2,6 +2,7 @@
     font-size: xx-large;
     text-decoration: underline;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 .checkout-pic{
     width: 300px;
@@ -9,11 +10,12 @@
     flex-direction: column;
 
 }
-.checkout-name{
+.checkout-name{ font-size:30px;
 font-weight: 600;
 
+
 }
-.remove-button{
+.remove-button{ margin-left: 10px;
     background-color:red;
 }
 .checkout-box{
@@ -24,5 +26,8 @@ font-weight: 600;
 .checkout-total{
     font-weight:900;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    font-size: 30px;
+    text-decoration:underline
 }

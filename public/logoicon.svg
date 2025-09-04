@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="cyberclothes mark">
+  <defs>
+    <style>
+      :root {
+        --bg: #0b0f14;
+        --primary: #00e0ff;
+        --accent: #7cff6b;
+      }
+    </style>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="200" height="200" rx="24" fill="var(--bg)"/>
+  <!-- Hexagon -->
+  <polygon points="100,8 183,54 183,146 100,192 17,146 17,54"
+           fill="none" stroke="var(--primary)" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Inner "C" circuit -->
+  <path d="M140 60
+           A50 50 0 1 0 140 140"
+        stroke="var(--primary)" stroke-width="10" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+  <!-- Outer "C" accent trace -->
+  <path d="M152 46
+           A66 66 0 1 0 152 154"
+        stroke="var(--accent)" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="6 10"/>
+  <!-- Nodes -->
+  <circle cx="152" cy="46" r="5" fill="var(--accent)"/>
+  <circle cx="152" cy="154" r="5" fill="var(--accent)"/>
+  <circle cx="140" cy="60" r="6" fill="var(--primary)"/>
+  <circle cx="140" cy="140" r="6" fill="var(--primary)"/>
+</svg>

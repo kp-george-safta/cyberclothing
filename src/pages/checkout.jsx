@@ -4,6 +4,12 @@ import "/Users/admin/Desktop/dev/cyberclothing/src/styles/pages/checkout.scss";
 const Checkout = () => {
   const { cart, removeFromCart } = useCart();
 
+  // multiply price * quantity for total
+  const total = cart.reduce(
+    (sum, product) => sum + Number(product.price) * product.quantity,
+    0
+  );
+
   return (
     <div>
       <h1 className="checkout-title">Your Cart:</h1>
@@ -14,30 +20,33 @@ const Checkout = () => {
           {cart.map((product) => (
             <li key={product.id}>
               <div className="checkout-box">
-                {" "}
                 <div className="checkout-pic">
                   <img
                     src={product.imgSrc}
-                    alt="shoe"
+                    alt={product.name}
                     style={{ width: "100%" }}
-                  ></img>{" "}
+                  />
                 </div>
                 <div className="checkout-name">
-                  {" "}
                   {product.name} - {product.price} {product.currency}
+                  <p className="checkout-quantity">Quantity: x{product.quantity}</p>
                   <button
                     className="remove-button"
                     onClick={() => removeFromCart(product.id)}
                   >
                     Remove
                   </button>
-                </div>{" "}
-              </div>{" "}
+                </div>
+              </div>
             </li>
           ))}
         </ul>
       )}
-      <div className="checkout-total">Total cost:</div>
+      {cart.length > 0 && (
+        <div className="checkout-total">
+          Total cost: {total} {cart[0]?.currency}
+        </div>
+      )}
     </div>
   );
 };

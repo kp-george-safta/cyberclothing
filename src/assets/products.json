@@ -2,70 +2,70 @@
   {
     "id": 1,
     "imgSrc": "/public/products/1.png",
-    "name": "Air Jordan 4 Retro Cave Stone",
-    "price": 1016,
+    "name": "Hoka M Clifton 10",
+    "price": 789,
     "currency": "RON",
     "tag": "NEW"
   },
   {
     "id": 2,
     "imgSrc": "/public/products/2.png",
-    "name": "Air Jordan 4 Retro W Denim Worn Blue",
-    "price": 1016,
+    "name": "Air Jordan 1 Retro High OG Yellow Ochre",
+    "price": 846,
     "currency": "RON",
     "tag": "TRENDING"
   },
   {
     "id": 3,
     "imgSrc": "/public/products/3.png",
-    "name": "Nike W Shox TL",
-    "price": 769,
+    "name": "Jordan 4 Retro Cave Stone",
+    "price": 1016,
     "currency": "RON",
     "tag": "BEST SELLER"
   },
   {
     "id": 4,
     "imgSrc": "/public/products/4.png",
-    "name": "Air Jordan 1 Retro High OG Chicago",
-    "price": 1200,
+    "name": "Air Jordan 4 Retro W Denim Worn Blue",
+    "price": 999,
     "currency": "RON",
     "tag": "NEW"
   },
   {
     "id": 5,
     "imgSrc": "/public/products/5.png",
-    "name": "Air Jordan 1 High OG Shadow",
-    "price": 1099,
+    "name": "Air Force 1 Low Triple White",
+    "price": 599,
     "currency": "RON",
     "tag": "TRENDING"
   },
   {
     "id": 6,
     "imgSrc": "/public/products/6.png",
-    "name": "Air Jordan 4 Lightning",
-    "price": 980,
+    "name": "Nike W Shox TL",
+    "price": 839,
     "currency": "RON",
     "tag": "TRENDING"
   },
   {
     "id": 7,
     "imgSrc": "/public/products/7.png",
-    "name": "Nike Dunk Low Panda",
-    "price": 749,
+    "name": "Vans Knu Skool",
+    "price": 399,
     "currency": "RON",
     "tag": "BEST SELLER"
   },
   {
     "id": 8,
     "imgSrc": "/public/products/8.png",
-    "name": "Nike Air Max 97 Silver Bullet",
-    "price": 880,
+    "name": "Y-3 Nizzastar Hi",
+    "price": 1899,
     "currency": "RON",
     "tag": "NEW"
   },
   {
     "id": 9,
-    "imgSrc": "/public/products/1.png",
+    "imgSrc": "/public/products/9.png",
     "name": "Adidas Yeezy Boost 350 V2 Zebra",
     "price": 1400,
     "currency": "RON",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "imgSrc": "/public/products/2.png",
+    "imgSrc": "/public/products/10.png",
     "name": "Adidas Yeezy Slide Bone",
     "price": 550,
     "currency": "RON",
@@ -81,15 +81,15 @@
   },
   {
     "id": 11,
-    "imgSrc": "/public/products/3.png",
-    "name": "Nike Air Force 1 Low Triple White",
+    "imgSrc": "/public/products/11.png",
+    "name": "Nike Air Force 1 Low Triple Black",
     "price": 599,
     "currency": "RON",
     "tag": "BEST SELLER"
   },
   {
     "id": 12,
-    "imgSrc": "/public/products/4.png",
+    "imgSrc": "/public/products/12.png",
     "name": "Air Jordan 6 Retro Carmine",
     "price": 1050,
     "currency": "RON",
@@ -97,7 +97,7 @@
   },
   {
     "id": 13,
-    "imgSrc": "/public/products/5.png",
+    "imgSrc": "/public/products/13.png",
     "name": "Nike Blazer Mid '77 Vintage",
     "price": 529,
     "currency": "RON",
@@ -105,7 +105,7 @@
   },
   {
     "id": 14,
-    "imgSrc": "/public/products/6.png",
+    "imgSrc": "/public/products/14.png",
     "name": "Nike Air Max 90 Infrared",
     "price": 820,
     "currency": "RON",
@@ -113,7 +113,7 @@
   },
   {
     "id": 15,
-    "imgSrc": "/public/products/7.png",
+    "imgSrc": "/public/products/15.png",
     "name": "Air Jordan 11 Concord",
     "price": 1250,
     "currency": "RON",
@@ -121,7 +121,7 @@
   },
   {
     "id": 16,
-    "imgSrc": "/public/products/8.png",
+    "imgSrc": "/public/products/16.png",
     "name": "Air Jordan 3 White Cement Reimagined",
     "price": 1100,
     "currency": "RON",
@@ -129,7 +129,7 @@
   },
   {
     "id": 17,
-    "imgSrc": "/public/products/1.png",
+    "imgSrc": "/public/products/17.png",
     "name": "Air Jordan 4 Bred",
     "price": 1120,
     "currency": "RON",
@@ -137,7 +137,7 @@
   },
   {
     "id": 18,
-    "imgSrc": "/public/products/2.png",
+    "imgSrc": "/public/products/18.png",
     "name": "Nike SB Dunk Low Pro",
     "price": 890,
     "currency": "RON",
@@ -145,7 +145,7 @@
   },
   {
     "id": 19,
-    "imgSrc": "/public/products/3.png",
+    "imgSrc": "/public/products/19.png",
     "name": "Air Jordan 1 Dark Mocha",
     "price": 1320,
     "currency": "RON",
@@ -153,7 +153,7 @@
   },
   {
     "id": 20,
-    "imgSrc": "/public/products/4.png",
+    "imgSrc": "/public/products/20.png",
     "name": "Adidas Campus 00s Grey",
     "price": 620,
     "currency": "RON",
@@ -161,7 +161,7 @@
   },
   {
     "id": 21,
-    "imgSrc": "/public/products/5.png",
+    "imgSrc": "/public/products/21.png",
     "name": "Nike Air Presto Triple Black",
     "price": 760,
     "currency": "RON",
@@ -169,7 +169,7 @@
   },
   {
     "id": 22,
-    "imgSrc": "/public/products/6.png",
+    "imgSrc": "/public/products/22.png",
     "name": "Nike Air Max 1 Patina",
     "price": 870,
     "currency": "RON",
@@ -177,7 +177,7 @@
   },
   {
     "id": 23,
-    "imgSrc": "/public/products/7.png",
+    "imgSrc": "/public/products/23.png",
     "name": "Air Jordan 5 Oreo",
     "price": 1010,
     "currency": "RON",
@@ -185,7 +185,7 @@
   },
   {
     "id": 24,
-    "imgSrc": "/public/products/8.png",
+    "imgSrc": "/public/products/24.png",
     "name": "Air Jordan 1 Court Purple",
     "price": 970,
     "currency": "RON",
@@ -193,7 +193,7 @@
   },
   {
     "id": 25,
-    "imgSrc": "/public/products/1.png",
+    "imgSrc": "/public/products/25.png",
     "name": "Nike Air VaporMax Flyknit 3",
     "price": 980,
     "currency": "RON",
@@ -201,7 +201,7 @@
   },
   {
     "id": 26,
-    "imgSrc": "/public/products/2.png",
+    "imgSrc": "/public/products/26.png",
     "name": "Adidas Yeezy 500 Blush",
     "price": 1250,
     "currency": "RON",
@@ -209,7 +209,7 @@
   },
   {
     "id": 27,
-    "imgSrc": "/public/products/3.png",
+    "imgSrc": "/public/products/27.png",
     "name": "Air Jordan 4 Pine Green",
     "price": 1130,
     "currency": "RON",
@@ -217,7 +217,7 @@
   },
   {
     "id": 28,
-    "imgSrc": "/public/products/4.png",
+    "imgSrc": "/public/products/28.png",
     "name": "Air Jordan 1 Lost and Found",
     "price": 1380,
     "currency": "RON",
@@ -225,7 +225,7 @@
   },
   {
     "id": 29,
-    "imgSrc": "/public/products/5.png",
+    "imgSrc": "/public/products/29.png",
     "name": "Nike Air Tailwind 79",
     "price": 649,
     "currency": "RON",
@@ -233,7 +233,7 @@
   },
   {
     "id": 30,
-    "imgSrc": "/public/products/6.png",
+    "imgSrc": "/public/products/30.png",
     "name": "Nike Air Max Plus TN",
     "price": 860,
     "currency": "RON",
@@ -241,7 +241,7 @@
   },
   {
     "id": 31,
-    "imgSrc": "/public/products/7.png",
+    "imgSrc": "/public/products/31.png",
     "name": "Reebok Classic Leather White",
     "price": 499,
     "currency": "RON",
@@ -249,7 +249,7 @@
   },
   {
     "id": 32,
-    "imgSrc": "/public/products/8.png",
+    "imgSrc": "/public/products/32.png",
     "name": "Puma Suede Classic Black",
     "price": 440,
     "currency": "RON",
@@ -257,7 +257,7 @@
   },
   {
     "id": 33,
-    "imgSrc": "/public/products/1.png",
+    "imgSrc": "/public/products/33.png",
     "name": "Converse Chuck Taylor All Star High",
     "price": 350,
     "currency": "RON",
@@ -265,7 +265,7 @@
   },
   {
     "id": 34,
-    "imgSrc": "/public/products/2.png",
+    "imgSrc": "/public/products/34.png",
     "name": "Nike ACG Mountain Fly Low",
     "price": 990,
     "currency": "RON",
@@ -273,7 +273,7 @@
   },
   {
     "id": 35,
-    "imgSrc": "/public/products/3.png",
+    "imgSrc": "/public/products/35.png",
     "name": "Adidas NMD R1 Triple Black",
     "price": 830,
     "currency": "RON",
@@ -281,7 +281,7 @@
   },
   {
     "id": 36,
-    "imgSrc": "/public/products/4.png",
+    "imgSrc": "/public/products/36.png",
     "name": "New Balance 550 White Grey",
     "price": 890,
     "currency": "RON",
@@ -289,7 +289,7 @@
   },
   {
     "id": 37,
-    "imgSrc": "/public/products/5.png",
+    "imgSrc": "/public/products/37.png",
     "name": "New Balance 327 Moonbeam",
     "price": 840,
     "currency": "RON",
@@ -297,7 +297,7 @@
   },
   {
     "id": 38,
-    "imgSrc": "/public/products/6.png",
+    "imgSrc": "/public/products/38.png",
     "name": "Nike ZoomX Vaporfly Next%",
     "price": 1300,
     "currency": "RON",
@@ -305,7 +305,7 @@
   },
   {
     "id": 39,
-    "imgSrc": "/public/products/7.png",
+    "imgSrc": "/public/products/39.png",
     "name": "Air Jordan 13 Flint",
     "price": 1100,
     "currency": "RON",
@@ -313,7 +313,7 @@
   },
   {
     "id": 40,
-    "imgSrc": "/public/products/8.png",
+    "imgSrc": "/public/products/40.png",
     "name": "Air Jordan 2 Chicago",
     "price": 1049,
     "currency": "RON",
@@ -321,7 +321,7 @@
   },
   {
     "id": 41,
-    "imgSrc": "/public/products/1.png",
+    "imgSrc": "/public/products/41.png",
     "name": "Adidas Yeezy Boost 700 Wave Runner",
     "price": 1450,
     "currency": "RON",
@@ -329,7 +329,7 @@
   },
   {
     "id": 42,
-    "imgSrc": "/public/products/2.png",
+    "imgSrc": "/public/products/42.png",
     "name": "Nike Air Huarache OG",
     "price": 799,
     "currency": "RON",
@@ -337,7 +337,7 @@
   },
   {
     "id": 43,
-    "imgSrc": "/public/products/3.png",
+    "imgSrc": "/public/products/43.png",
     "name": "Nike Air Max 95 Neon",
     "price": 930,
     "currency": "RON",
@@ -345,7 +345,7 @@
   },
   {
     "id": 44,
-    "imgSrc": "/public/products/4.png",
+    "imgSrc": "/public/products/44.png",
     "name": "Nike Daybreak Undercover Black",
     "price": 870,
     "currency": "RON",
@@ -353,7 +353,7 @@
   },
   {
     "id": 45,
-    "imgSrc": "/public/products/5.png",
+    "imgSrc": "/public/products/45.png",
     "name": "Adidas Forum Low White Blue",
     "price": 710,
     "currency": "RON",
@@ -361,7 +361,7 @@
   },
   {
     "id": 46,
-    "imgSrc": "/public/products/6.png",
+    "imgSrc": "/public/products/46.png",
     "name": "Air Jordan 1 Rebellionaire",
     "price": 1280,
     "currency": "RON",
@@ -369,7 +369,7 @@
   },
   {
     "id": 47,
-    "imgSrc": "/public/products/7.png",
+    "imgSrc": "/public/products/47.png",
     "name": "Air Jordan 12 Taxi",
     "price": 1150,
     "currency": "RON",
@@ -377,7 +377,7 @@
   },
   {
     "id": 48,
-    "imgSrc": "/public/products/8.png",
+    "imgSrc": "/public/products/48.png",
     "name": "Nike Cortez White Red",
     "price": 499,
     "currency": "RON",
@@ -385,7 +385,7 @@
   },
   {
     "id": 49,
-    "imgSrc": "/public/products/1.png",
+    "imgSrc": "/public/products/49.png",
     "name": "Adidas Ozweego Core Black",
     "price": 690,
     "currency": "RON",
@@ -393,7 +393,7 @@
   },
   {
     "id": 50,
-    "imgSrc": "/public/products/2.png",
+    "imgSrc": "/public/products/50.png",
     "name": "Puma RS-X Bold",
     "price": 740,
     "currency": "RON",
