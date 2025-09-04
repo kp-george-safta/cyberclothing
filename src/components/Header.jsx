@@ -15,6 +15,7 @@ export function Header() {
   const [hideClass, setHideClass] = React.useState(true);
   const [password1, setNewPassword] = React.useState("");
   const [password2, confirmNewPassword] = React.useState("");
+  const [signupSuccessful, setSignupSuccessful] = React.useState(false);
   const [signmessage, setSignUpMessage] = React.useState("");
   const [emailAdded, setSignUpEmail] = React.useState("");
   const [unameAdded, setSignUpUname] = React.useState("");
@@ -65,13 +66,18 @@ export function Header() {
     if(password1 === password2){
       if(validEmail(emailAdded) === true && unameAdded != ''){
         setSignUpMessage('Sign Up succeded')
+        setSignupSuccessful(true)
         getLoginUser(unameAdded)
       }
         else {
           setSignUpMessage('Information missing')
+          setSignupSuccessful(false)
+
         }
     } else {
       setSignUpMessage("Passwords don't match")
+      setSignupSuccessful(false)
+
     }
   };
   const customStyles = {
@@ -172,7 +178,7 @@ export function Header() {
                 onChange={(e) => setLoginPassword(e.target.value)}
               /> <br></br>
               <button className={`modal-buttons`} onClick={handleLogin}>Login</button>
-              <h4 className={`${hideAccept ? '' : ''}`}>{message}</h4>
+              <h4>{message}</h4>
               <button className={`bottom-buttons modal-buttons`} onClick={() => setHideClass(false)}>
               Sign Up
             </button>
@@ -219,7 +225,9 @@ export function Header() {
               >
                 Sign up
                 </button>
-              <h4 className="bad-mes">{signmessage}</h4>
+              {signmessage && (
+                <h4 className={ signupSuccessful ? 'good-mes' : 'bad-mes' }>{signmessage}</h4>
+              )}
               <button className={`bottom-buttons modal-buttons`} onClick={() => setHideClass(true)}>
               Login
             </button>
