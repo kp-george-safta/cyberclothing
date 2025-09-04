@@ -1,14 +1,14 @@
 import {Link} from "react-router-dom";
 const ProductBox = ({product}) => (
- <Link to={`/${product.id}/productpage`}
+ <Link className="product-box" to={`/${product.id}/productpage`}
     state={{ product }}     // pass product as route state
     style={{ textDecoration: "none", color: "inherit" }}>
- <div className="product-box">
-    <div className="product-image">
-      <img src={product.imgSrc} alt="shoe" style={{width: '100%'}} />
-      <img className="favorite" src="" alt="" />
+    <div className="product-image-wrapper">
+      <div className="product-image" style={{ backgroundImage: `url(${product.imgSrc})` }}>
+        {/* <img src={product.imgSrc} alt="shoe" /> */}
+      </div>
     </div>
-    <div>
+    <div className="product-details">
       <h3 className="product-name">{product.name}</h3>
       <p className="product-price">
         {product.price}
@@ -16,7 +16,6 @@ const ProductBox = ({product}) => (
       </p>
       <span className="product-tag">{product.tag}</span>
     </div>
-  </div>
   </Link>
 );
 

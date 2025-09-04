@@ -6,6 +6,10 @@ function Blog() {
 
 
         </p>
+
+        <CheckoutSectio />
+        <LoginButton />
+        <DetailsSubscription />
     
     </div>)
 }
