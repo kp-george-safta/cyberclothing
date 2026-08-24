@@ -39,7 +39,7 @@ export default function Home() {
           <h2>
             Products API <span>-&gt;</span>
           </h2>
-          <p>Route handler serving the product list.</p>
+          <p>Stub route handler. Returns placeholder JSON.</p>
         </a>
 
         <a
@@ -51,7 +51,7 @@ export default function Home() {
           <h2>
             Vendors API <span>-&gt;</span>
           </h2>
-          <p>Route handler serving the vendor list.</p>
+          <p>Stub route handler. POST login is still a task.</p>
         </a>
       </div>
     </main>
