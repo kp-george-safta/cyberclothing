@@ -1,0 +1,335 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #111;
+}
+
+.header {
+    width: 100%;
+    background: #fff;
+}
+
+.b2school_promotion {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: #403B3B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_CTA {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    font-size: 11px;
+}
+
+.text_CTA h4 {
+    margin: 0;
+}
+
+.text_CTA h4:last-child {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AnswearLogo {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+.close_b2school_promotion {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.xMark_Icon {
+    width: 22px;
+    height: 25px;
+    display: block;
+    color: #FFF;
+    filter: brightness(0) invert(1);
+}
+
+.brandsLogo {
+    width: auto;
+    height: 20px;
+    object-fit: contain;
+}
+
+.brandsSection {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 56px;
+}
+
+@media (max-width: 768px) {
+    .brandsSection {
+        padding: 0 40px;
+    }
+}
+
+.Help_buttons {
+    width: 90%;
+    max-width: 1600px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 18px;
+}
+
+.Answear_Club,
+.Journal,
+.Help {
+    color: #666;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.Categories {
+    width: 90%;
+    max-width: 1600px;
+    height: 1px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.categoryLink,
+.active {
+    color: #111;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+}
+
+.active {
+    font-weight: 600;
+    border-bottom-color: #111;
+}
+
+.categoryLink:hover {
+    border-bottom-color: #111;
+}
+
+.account_preferences {
+    width: 90%;
+    max-width: 1600px;
+    height: 34px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+}
+
+.iconLink {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+}
+
+.iconLink svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.search_bar {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.dropdown_meniu {
+    position: relative;
+    width: 90%;
+    max-width: 1600px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdownLink,
+.dropdownSale {
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+
+.dropdownLink:hover {
+    border-bottom-color: #111;
+}
+
+.dropdownSale {
+    color: #e53935;
+}
+
+.dropdownSale:hover {
+    border-bottom-color: #111;
+}
+
+.dropdown {
+    position: static;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-height: 350px;
+    padding: 30px 0 40px;
+    background: #fff;
+    z-index: 100;
+    grid-template-columns: 220px 220px 1fr;
+    column-gap: 40px;
+}
+
+.dropdown:hover .dropdownContent {
+    display: grid;
+}
+
+.dropdownColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdownColumn a {
+    color: #111;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+.dropdownColumn a:hover {
+    text-decoration: underline;
+}
+
+.dropdownBanner {
+    width: 300px;
+    height: 175px;
+    justify-self: end;
+    margin-right: 20px;
+    background: #f3f3f3;
+}
+
+.Top_content {
+    width: 100%;
+    background: #fff;
+}
+
+.b2school_promo {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.promoBannerB2School {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.promoContent {
+    position: absolute;
+    left: 40px;
+    bottom: 35px;
+    z-index: 2;
+    color: #fff;
+}
+
+.promoContent h1 {
+    margin: 0 0 20px;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.promoButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    height: 40px;
+    padding: 0 20px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.promoButton:hover {
+    background: #111;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.Mid_content,
+.Bottom_conent {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.Footer {
+    width: 100%;
+    background: #111;
+    color: #fff;
+}

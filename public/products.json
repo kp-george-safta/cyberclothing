@@ -1,143 +1,328 @@
 [
   {
-    "name": "Rochie roz 123123123131312312312",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"1"
+    "id": 1,
+    "imgSrc": "/products/Camasa-HUGO.png",
+    "brand": "HUGO Blue",
+    "name": "Cămașă pentru bărbați din bumbac Ebaltow",
+    "category": "Cămași",
+    "price": "498.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "S",
+      "M"
+    ]
   },
   {
-    "name": "Rochie roz 1",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"1"
+    "id": 2,
+    "imgSrc": "/products/AA00-TSMZZT-00X_F1_010_FWbB.png",
+    "brand": "Vans",
+    "name": "Tricou pentru bărbați din bumbac PREMIUM",
+    "category": "Tricouri",
+    "color": "Alb",
+    "price": "149.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL",
+      "XXXXL"
+    ]
   },
   {
-    "name": "Rochie roz 2",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"1"
+    "id": 3,
+    "imgSrc": "/products/AW26-SJMZSW-99J_F1_FWbB.png",
+    "brand": "adidas Originals",
+    "name": "Blugi straight pentru bărbați Mid-rise Straight",
+    "category": "Blugi",
+    "color": "Negru",
+    "price": "519.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL",
+      "XXXXL"
+    ]
   },
   {
-    "name": "Rochie roz 3",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"1"
+    "id": 4,
+    "imgSrc": "/products/SS26-OBM0TJ-99X_F1_008_FWbB.png",
+    "brand": "Veja",
+    "name": "GT NOLYN sneakers pentru bărbați",
+    "category": "Incaltaminte",
+    "color": "Negru",
+    "price": "679.90",
+    "currency": "RON",
+    "tag": "Mens"
   },
   {
-    "name": "Rochie roz 4",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"1"
+    "id": 5,
+    "imgSrc": "/products/AW26-KDMZT6-99X_F1_002_FWbB.png",
+    "brand": "Karl Lagerfeld Jeans",
+    "name": "Cămașă pentru bărbați din bumbac",
+    "category": "Cămași",
+    "color": "Negru/Alb",
+    "price": "728.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL",
+      "XXXXL"
+    ]
   },
   {
-    "name": "Rochie roz 5",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"1"
+    "id": 6,
+    "imgSrc": "/products/AW26-TSMZWW-99X_F1_002_FWbB.png",
+    "brand": "HUGO Blue",
+    "name": "Tricou pentru bărbați din bumbac Nowboi",
+    "category": "Tricouri",
+    "color": "Negru",
+    "price": "248.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL",
+      "XXXXL"
+    ]
   },
   {
-    "name": "Rochie roz 6",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"1"
+    "id": 7,
+    "imgSrc": "/products/AW26-SJMZMZ-50X_F1_FWbB.png",
+    "brand": "AllSaints",
+    "name": "Blugi relaxed fit pentru bărbați RIVET",
+    "category": "Blugi",
+    "color": "Albastru",
+    "price": "849.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL",
+      "XXXXL"
+    ]
   },
   {
-    "name": "Rochie roz 7",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"2"
+    "id": 8,
+    "imgSrc": "/products/SS26-OBU053-00X_F1_005_FWbB.png",
+    "brand": "adidas Originals",
+    "name": "Sneakers SUPERSTAR II",
+    "category": "Incaltaminte",
+    "color": "Alb",
+    "price": "629.90",
+    "currency": "RON",
+    "tag": "Mens"
   },
   {
-    "name": "Rochie roz 8",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"2"
+    "id": 9,
+    "imgSrc": "/products/AW26-BLMZJM-99X_F1_002_FWbB.png",
+    "brand": "Vans",
+    "name": "Hanorac cu glugă pentru bărbați din bumbac",
+    "category": "Bluze si hanorace",
+    "color": "Negru",
+    "price": "399.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "M"
+    ]
   },
   {
-    "name": "Rochie roz 8",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"2"
+    "id": 10,
+    "imgSrc": "/products/AW26-BUMZZI-99X_F1_009_FWbB.png",
+    "brand": "Guess Jeans",
+    "name": "Longsleeve pentru bărbați din bumbac",
+    "category": "Bluze si hanorace",
+    "color": "Negru",
+    "price": "248.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL",
+      "XXXXL"
+    ]
   },
   {
-    "name": "Rochie roz 10",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"3"
+    "id": 11,
+    "imgSrc": "/products/SS26-SZM08L-55J_F1_002_FWbB.png",
+    "brand": "adidas Originals",
+    "name": "Pantaloni scurți pentru bărbați din denim",
+    "category": "Pantaloni scurti",
+    "color": "Albastru",
+    "price": "319.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL",
+      "XXXXL"
+    ]
   },
   {
-    "name": "Rochie roz 9",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"3"
+    "id": 12,
+    "imgSrc": "/products/AW26-PKUZS5-99X_F1_002_FWbB.png",
+    "brand": "Herschel",
+    "name": "Rucsac Survey™",
+    "category": "Ghiozdane",
+    "color": "Negru",
+    "price": "449.90",
+    "currency": "RON",
+    "tag": "Mens"
   },
   {
-    "name": "Rochie roz 11",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"4"
+    "id": 13,
+    "imgSrc": "/products/AW26-TSMZZK-99X_F1_007_FWbB.png",
+    "brand": "AllSaints",
+    "name": "Tricou pentru bărbați din bumbac DASH",
+    "category": "Tricouri",
+    "color": "Negru",
+    "price": "369.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "XXS",
+      "XS",
+      "S",
+      "M"
+    ]
   },
   {
-    "name": "Rochie roz 12",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"4"
+    "id": 14,
+    "imgSrc": "/products/AW26-SJMZW9-90X_F1_002_FWbB.png",
+    "brand": "Tommy Jeans",
+    "name": "Blugi relaxed fit pentru bărbați",
+    "category": "Blugi",
+    "color": "Negru",
+    "price": "489.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "M",
+      "L",
+      "XL"
+    ]
   },
   {
-    "name": "Rochie roz 13",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"4"
+    "id": 15,
+    "imgSrc": "/products/SS26-OBU06M-99X_F1_002_FWbB.png",
+    "brand": "New Balance",
+    "name": "2010 sneakers",
+    "category": "Incaltaminte",
+    "color": "Negru",
+    "price": "889.90",
+    "currency": "RON",
+    "tag": "Mens"
   },
   {
-    "name": "Rochie roz 13",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"4"
+    "id": 16,
+    "imgSrc": "/products/AW26-BLMZOT-99X_F1_009_FWbB.png",
+    "brand": "adidas Originals",
+    "name": "Hanorac cu fermoar pentru bărbați Adicolor Classic",
+    "category": "Bluze si hanorace",
+    "color": "Negru",
+    "price": "419.90",
+    "currency": "RON",
+    "tag": "Mens"
   },
   {
-    "name": "Rochie roz 13",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"5"
+    "id": 17,
+    "imgSrc": "/products/AW26-SZMZYO-01X_F1_003_FWbB.png",
+    "brand": "Kenzo",
+    "name": "Pantaloni scurți pentru bărbați cu bumbac",
+    "category": "Pantaloni scurti",
+    "color": "Crem",
+    "price": "1769.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "size": [
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL",
+      "XXXXL"
+    ]
   },
   {
-    "name": "Rochie roz 13",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"5"
+    "id": 18,
+    "imgSrc": "/products/SS26-OBU055-99X_F1_004_FWbB.png",
+    "brand": "adidas Originals",
+    "name": "Sneakers SUPERSTAR II",
+    "price": "629.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "category": "Incaltaminte",
+    "type": "Sneakers",
+    "color": "Negru"
   },
   {
-    "name": "Rochie roz 13",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"5"
-  },
-  {
-    "name": "Rochie roz 13",
-    "price": 22.5,
-    "Descripiton": "Acesta este o rochie roz care este vandur de un comerciant",
-    "photo": "./rochie-roz.jpeg",
-    "vendorId":"5"
+    "id": 19,
+    "imgSrc": "/products/AW26-BUMZZN-99X_F1_FWbB.png",
+    "brand": "Kenzo",
+    "name": "Longsleeve pentru bărbați din bumbac",
+    "price": "1109.90",
+    "currency": "RON",
+    "tag": "Mens",
+    "category": "Bluze si hanorace",
+    "type": "Fără fermoar",
+    "color": "Negru",
+    "hood": "Fără glugă",
+    "material": "Bumbac",
+    "size": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL",
+      "XXXXL"
+    ]
   }
-  
 ]
