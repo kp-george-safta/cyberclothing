@@ -19,6 +19,7 @@ import { Search } from 'lucide-react';
 export default function HeaderDropdown() {
 
     const pathname = usePathname();
+    const section = pathname.split('/')[1];
     console.log('Current pathname:', pathname);
 
     const searchParams = useSearchParams();
@@ -52,7 +53,9 @@ export default function HeaderDropdown() {
             </Link>
 
             <div className={styles.dropdown}>
-                <span className={styles.dropdownLink}><a href="/clothing">Îmbrăcăminte </a></span>
+                <span className={styles.dropdownLink}>
+                    <Link href={`/${section}/clothing`}>Îmbrăcăminte</Link>
+                </span>
 
                 <div className={styles.dropdownContent}>
                     <ul className={styles.dropdownColumn}>
@@ -87,7 +90,9 @@ export default function HeaderDropdown() {
             </div>
 
             <div className={styles.dropdown}>
-                <span className={styles.dropdownLink}><a href="/shoes">Încălțăminte</a></span>
+                <span className={styles.dropdownLink}>
+                    <Link href={`/${section}/shoes`}>Încălțăminte</Link>
+                </span>
 
                 <div className={styles.dropdownContent}>
                     <ul className={styles.dropdownColumn}>
@@ -114,7 +119,9 @@ export default function HeaderDropdown() {
             </div>
 
             <div className={styles.dropdown}>
-                <span className={styles.dropdownLink}><a href="/accessories">Accesorii</a></span>
+                <span className={styles.dropdownLink}>
+                    <Link href={`/${section}/accessories`}>Accesorii</Link>
+                </span>
 
                 <div className={styles.dropdownContent}>
                     <ul className={styles.dropdownColumn}>
@@ -151,23 +158,23 @@ export default function HeaderDropdown() {
                 </div>
             </div>
 
-            <Link href="/sport" className={styles.dropdownLink}>
+            <Link href={`/${section}/sport`} className={styles.dropdownLink}>
                 Sport
             </Link>
 
-            <Link href="/premium" className={styles.dropdownLink}>
+            <Link href={`/${section}/premium`} className={styles.dropdownLink}>
                 Premium
             </Link>
 
-            <Link href="/brands" className={styles.dropdownLink}>
+            <Link href={`/${section}/brands`} className={styles.dropdownLink}>
                 Branduri
             </Link>
 
-            <Link href="/sale" className={styles.dropdownSale}>
+            <Link href={`/${section}/sale`} className={styles.dropdownSale}>
                 Sale
             </Link>
 
-            <Link href="/backpacks" className={styles.dropdownLink}>
+            <Link href={`/${section}/backpacks`} className={styles.dropdownLink}>
                 Rucsacuri
             </Link>
 

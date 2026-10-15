@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function PageSidebar() {
     
-    
+
     const [isOpen, setIsOpen] = useState(null);
     const handleSelectedStatus = (isVisible) => {
         setIsOpen((current) => (current === isVisible ? null : isVisible));

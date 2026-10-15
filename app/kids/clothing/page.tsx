@@ -1,9 +1,9 @@
 "use client";
 import { useState } from 'react';
-import PageProducts from '../components/shared/page-products/page';
-import styles from './clothing.module.css';
-import PageSidebar from '../components/shared/page-sidebar/page';
-import PageFilter from '../components/shared/page-filters/page';
+import PageProducts from '../../components/shared/page-products/page';
+import styles from '../../clothing/clothing.module.css';
+import PageSidebar from '../../components/shared/page-sidebar/page';
+import PageFilter from '../../components/shared/page-filters/page';
 
 
 

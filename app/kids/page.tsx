@@ -3,10 +3,6 @@
 import styles from "./kids-page.module.css";
 import Link from "next/link";
 import BrandsSlider from "../components/shared/brands-slider/page";
-import xMark from '@/public/Animations/xmark-solid-full.svg';
-import Image from 'next/image';
-import { useState } from 'react';
-import * as React from "react"
 
 
 export default function Kids() {
