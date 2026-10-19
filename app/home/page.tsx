@@ -13,7 +13,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import path from 'path';
-import BrandsSlider from './components/shared/brands-slider/page';
+import BrandsSlider from '../components/shared/brands-slider/page';
 
 interface Product {
   id: number;

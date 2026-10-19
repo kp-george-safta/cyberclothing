@@ -59,8 +59,8 @@ export default function Header() {
                 </Link>
 
                 <Link
-                    href="/"
-                    className={pathname === '/' ? `${styles.homeLink} ${styles.active}` : styles.homeLink}>
+                    href="/home"
+                    className={pathname === '/home' ? `${styles.homeLink} ${styles.active}` : styles.homeLink}>
                     Home
                 </Link>
 

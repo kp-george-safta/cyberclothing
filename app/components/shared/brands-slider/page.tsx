@@ -19,7 +19,7 @@ import TommyHilfiger from '@/public/Animations/Tommy-Hilfiger-logo.png';
 import TommyJeans from '@/public/Animations/Tommy-Jeans-logo.png';
 import UGG from '@/public/Animations/UGG-logo.png';
 import Image from "next/image";
-import styles from "../../../home-page.module.css";
+import styles from "../../../home/home-page.module.css";
 import {
     Carousel,
     CarouselContent,
