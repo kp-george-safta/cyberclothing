@@ -5,7 +5,6 @@ import BirkenStockSponsorDropdown from '@/public/Animations/83-6a95535fae85c3.jp
 import BossSponsorDropdown from '@/public/Animations/80-6a955344840303.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../../header/header.module.css';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { Search } from 'lucide-react';
@@ -39,26 +38,28 @@ export default function HeaderDropdown() {
         e.preventDefault();
         const term = searchParams.get('query') ?? '';
         push(`/clothing?query=${term}`);
-
     }
 
     return (
 
 
 
-        <div className={styles.dropdown_meniu}>
 
-            <Link href="/new" className={styles.dropdownLink}>
+        //  Desktop UI
+
+        <div className="relative mx-auto hidden md:flex h-[60px] w-[90%] max-w-[1600px] items-center gap-6 border-b border-[#eee]">
+
+            <Link href="/new" className="cursor-pointer border-b border-transparent pb-2 font-['Euclid_Circular_A',sans-serif] text-sm text-[#111] no-underline hover:border-[#111]">
                 Noutăți
             </Link>
 
-            <div className={styles.dropdown}>
-                <span className={styles.dropdownLink}>
+            <div className="group static flex h-full items-center">
+                <span className="cursor-pointer border-b border-transparent pb-2 font-['Euclid_Circular_A',sans-serif] text-sm text-[#111] no-underline hover:border-[#111]">
                     <Link href={`/${section}/clothing`}>Îmbrăcăminte</Link>
                 </span>
 
-                <div className={styles.dropdownContent}>
-                    <ul className={styles.dropdownColumn}>
+                <div className="absolute left-0 top-full z-[100] hidden min-h-[380px] w-full grid-cols-[220px_220px_1fr] gap-x-10 group-hover:grid before:absolute before:inset-y-0 before:left-1/2 before:z-[-1] before:w-screen before:-translate-x-1/2 before:bg-white">
+                    <ul className="m-0 flex list-none flex-col p-0 [&_li]:list-none [&_a]:block [&_a]:py-1.5 [&_a]:text-sm [&_a]:text-[#111] [&_a]:no-underline [&_a:hover]:underline">
                         <li><span><a href="/bluze-si-hanorace">Bluze și hanorace</a></span></li>
                         <li><span><a href="/camasi">Cămăși</a></span></li>
                         <li><span><a href="/compleuri">Compleuri</a></span></li>
@@ -73,7 +74,7 @@ export default function HeaderDropdown() {
                         <li><span><a href="/pantaloni-scurti">Pantaloni scurți</a></span></li>
                     </ul>
 
-                    <ul className={styles.dropdownColumn}>
+                    <ul className="m-0 flex list-none flex-col p-0 [&_li]:list-none [&_a]:block [&_a]:py-1.5 [&_a]:text-sm [&_a]:text-[#111] [&_a]:no-underline [&_a:hover]:underline">
                         <li><span><a href="/pulovere">Pulovere și cardigane</a></span></li>
                         <li><span><a href="/sacouri">Sacouri și costume</a></span></li>
                         <li><span><a href="/sosete">Șosete</a></span></li>
@@ -82,20 +83,20 @@ export default function HeaderDropdown() {
                         <li><span><a href="/imbracaminte">Vezi toate</a></span></li>
                     </ul>
 
-                    <div className={styles.dropdownBanner}>
-                        <Image src={LacosteSponsorDropdown} alt='lacoste' className={styles.SponsorDropdown} />
-                        <button className={styles.sponsorButton}>Sponsorizat ⓘ</button>
+                    <div className="col-start-3 mr-5 h-[175px] w-[300px] justify-self-end">
+                        <Image src={LacosteSponsorDropdown} alt='lacoste' className="mr-5 h-[175px] w-[300px] justify-self-end" />
+                        <button className="absolute right-[230px] top-[145px] cursor-pointer border-none bg-white/85 px-2 py-1 text-[10px] text-[#111]">Sponsorizat ⓘ</button>
                     </div>
                 </div>
             </div>
 
-            <div className={styles.dropdown}>
-                <span className={styles.dropdownLink}>
+            <div className="group static flex h-full items-center">
+                <span className="cursor-pointer border-b border-transparent pb-2 font-['Euclid_Circular_A',sans-serif] text-sm text-[#111] no-underline hover:border-[#111]">
                     <Link href={`/${section}/shoes`}>Încălțăminte</Link>
                 </span>
 
-                <div className={styles.dropdownContent}>
-                    <ul className={styles.dropdownColumn}>
+                <div className="absolute left-0 top-full z-[100] hidden min-h-[380px] w-full grid-cols-[220px_220px_1fr] gap-x-10 group-hover:grid before:absolute before:inset-y-0 before:left-1/2 before:z-[-1] before:w-screen before:-translate-x-1/2 before:bg-white">
+                    <ul className="m-0 flex list-none flex-col p-0 [&_li]:list-none [&_a]:block [&_a]:py-1.5 [&_a]:text-sm [&_a]:text-[#111] [&_a]:no-underline [&_a:hover]:underline">
                         <li><span><a href="/cizme-de-cauciuc">Cizme de cauciuc</a></span></li>
                         <li><span><a href="/cizme-de-zapada">Cizme de zăpadă</a></span></li>
                         <li><span><a href="/espadrile">Espadrile</a></span></li>
@@ -111,20 +112,20 @@ export default function HeaderDropdown() {
                         <li><span><a href="/incaltaminte">Vezi toate</a></span></li>
                     </ul>
 
-                    <div className={styles.dropdownBanner}>
-                        <Image src={BirkenStockSponsorDropdown} alt='lacoste' className={styles.SponsorDropdown} />
-                        <button className={styles.sponsorButton}>Sponsorizat ⓘ</button>
+                    <div className="col-start-3 mr-5 h-[175px] w-[300px] justify-self-end">
+                        <Image src={BirkenStockSponsorDropdown} alt='lacoste' className="mr-5 h-[175px] w-[300px] justify-self-end" />
+                        <button className="absolute right-[230px] top-[145px] cursor-pointer border-none bg-white/85 px-2 py-1 text-[10px] text-[#111]">Sponsorizat ⓘ</button>
                     </div>
                 </div>
             </div>
 
-            <div className={styles.dropdown}>
-                <span className={styles.dropdownLink}>
+            <div className="group static flex h-full items-center">
+                <span className="cursor-pointer border-b border-transparent pb-2 font-['Euclid_Circular_A',sans-serif] text-sm text-[#111] no-underline hover:border-[#111]">
                     <Link href={`/${section}/accessories`}>Accesorii</Link>
                 </span>
 
-                <div className={styles.dropdownContent}>
-                    <ul className={styles.dropdownColumn}>
+                <div className="absolute left-0 top-full z-[100] hidden min-h-[380px] w-full grid-cols-[220px_220px_1fr] gap-x-10 group-hover:grid before:absolute before:inset-y-0 before:left-1/2 before:z-[-1] before:w-screen before:-translate-x-1/2 before:bg-white">
+                    <ul className="m-0 flex list-none flex-col p-0 [&_li]:list-none [&_a]:block [&_a]:py-1.5 [&_a]:text-sm [&_a]:text-[#111] [&_a]:no-underline [&_a:hover]:underline">
                         <li><span><a href="/cizme-de-cauciuc">Accesorii inot</a></span></li>
                         <li><span><a href="/cizme-de-zapada">Bijuterii</a></span></li>
                         <li><span><a href="/espadrile">Borsete si genti mici</a></span></li>
@@ -140,7 +141,7 @@ export default function HeaderDropdown() {
 
                     </ul>
 
-                    <ul className={styles.dropdownColumn}>
+                    <ul className="m-0 flex list-none flex-col p-0 [&_li]:list-none [&_a]:block [&_a]:py-1.5 [&_a]:text-sm [&_a]:text-[#111] [&_a]:no-underline [&_a:hover]:underline">
                         <li><span><a href="/pulovere">In aer liber si turism</a></span></li>
                         <li><span><a href="/sacouri">Manusi</a></span></li>
                         <li><span><a href="/sosete">Ochelari de soare</a></span></li>
@@ -151,30 +152,30 @@ export default function HeaderDropdown() {
                         <li><span><a href="/incaltaminte">Vezi toate</a></span></li>
                     </ul>
 
-                    <div className={styles.dropdownBanner}>
-                        <Image src={BossSponsorDropdown} alt='lacoste' className={styles.SponsorDropdown} />
-                        <button className={styles.sponsorButton}>Sponsorizat ⓘ</button>
+                    <div className="col-start-3 mr-5 h-[175px] w-[300px] justify-self-end">
+                        <Image src={BossSponsorDropdown} alt='lacoste' className="mr-5 h-[175px] w-[300px] justify-self-end" />
+                        <button className="absolute right-[230px] top-[145px] cursor-pointer border-none bg-white/85 px-2 py-1 text-[10px] text-[#111]">Sponsorizat ⓘ</button>
                     </div>
                 </div>
             </div>
 
-            <Link href={`/${section}/sport`} className={styles.dropdownLink}>
+            <Link href={`/${section}/sport`} className="cursor-pointer border-b border-transparent pb-2 font-['Euclid_Circular_A',sans-serif] text-sm text-[#111] no-underline hover:border-[#111]">
                 Sport
             </Link>
 
-            <Link href={`/${section}/premium`} className={styles.dropdownLink}>
+            <Link href={`/${section}/premium`} className="cursor-pointer border-b border-transparent pb-2 font-['Euclid_Circular_A',sans-serif] text-sm text-[#111] no-underline hover:border-[#111]">
                 Premium
             </Link>
 
-            <Link href={`/${section}/brands`} className={styles.dropdownLink}>
+            <Link href={`/${section}/brands`} className="cursor-pointer border-b border-transparent pb-2 font-['Euclid_Circular_A',sans-serif] text-sm text-[#111] no-underline hover:border-[#111]">
                 Branduri
             </Link>
 
-            <Link href={`/${section}/sale`} className={styles.dropdownSale}>
+            <Link href={`/${section}/sale`} className="cursor-pointer border-b border-transparent pb-2 font-['Euclid_Circular_A',sans-serif] text-sm text-[#e53935] no-underline hover:border-[#111]">
                 Sale
             </Link>
 
-            <Link href={`/${section}/backpacks`} className={styles.dropdownLink}>
+            <Link href={`/${section}/backpacks`} className="cursor-pointer border-b border-transparent pb-2 font-['Euclid_Circular_A',sans-serif] text-sm text-[#111] no-underline hover:border-[#111]">
                 Rucsacuri
             </Link>
 
@@ -202,5 +203,51 @@ export default function HeaderDropdown() {
 
         </div>
 
+
+
+
     )
+}
+
+export function MobileNavLinks({ onClose }: { onClose: () => void }) {
+
+
+
+    const pathname = usePathname();
+    const section = pathname.split('/')[1];
+
+    const links = [
+        { href: '/new', label: "Noutăți" },
+        { href: `/${section}/clothing`, label: "Îmbrăcăminte" },
+        { href: `/${section}/shoes`, label: "Încălțăminte" },
+        { href: `/${section}/accessories`, label: "Accesorii" },
+        { href: `/${section}/sport`, label: "Sport" },
+        { href: `/${section}/premium`, label: "Premium" },
+        { href: `/${section}/brands`, label: "Branduri" },
+        { href: `/${section}/sale`, label: "Sale" },
+        { href: `/${section}/backpacks`, label: "Rucsacuri" }
+    ]
+
+
+    return (
+
+
+        // MOBILE UI
+
+
+        <div className="flex flex-col">
+
+            {links.map((link) =>
+                <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={onClose}
+                    className={"py-3 border-b border-[#eee] text-base text-[#111]"}
+                >
+                    {link.label}
+                </Link>
+            )}
+
+        </div>
+    );
 }

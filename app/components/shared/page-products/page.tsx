@@ -1,6 +1,6 @@
 "use client";
 
-import { Product } from "@/app/clothing/page";
+import { Product } from "../page-filters/page";
 import { Heart } from 'lucide-react';
 import Image from 'next/image';
 
